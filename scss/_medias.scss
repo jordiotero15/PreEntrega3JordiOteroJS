@@ -1,0 +1,988 @@
+/* MEDIA QUERIES HEADER */
+@media (min-width: 320px) and (max-width: 1000px) {
+    .navbar {
+        height: 100%;
+        padding: 0;
+    }
+
+    .containerEncabezado {
+        margin-left: 0;
+    }
+
+    .desplegable {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .containerBuscador {
+        width: 100%;
+
+    }
+}
+
+/* ************************************ */
+/* MEDIA QUERIES AYUDA HTML */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* MAIN AYUDA */
+
+    .centroAyuda {
+        height: 100%;
+    }
+
+    /* Section "Como comprar" */
+
+    .imgComoComprar {
+        display: none;
+    }
+
+    .containerAyuda {
+        display: block;
+        background-image: url(../img/comoComprar.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid black;
+    }
+
+    .parrafoAyuda {
+        background-color: rgb(204, 194, 194);
+        opacity: 82%;
+        height: 90%;
+        width: 96%;
+        padding: 2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    /* Section "Metodos de Pago" */
+
+    .imagenAyuda {
+        display: none;
+    }
+
+    .containerAyudaDos {
+        display: block;
+        background-image: url(../img/pagoTarjeta.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid black;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .parrafoAyudaDos {
+        background-color: rgb(204, 194, 194);
+        opacity: 82%;
+        height: 90%;
+        width: 96%;
+        padding: 2%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    /* Section "Metodos de Envio" */
+
+    #metEnvios {
+        background-image: url(../img/envios.jpg);
+    }
+
+    /* Section "Devoluciones" */
+
+    #devoluciones {
+        background-image: url(../img/devoluciones.jpg);
+    }
+}
+
+/* MEDIAS QUERIES CARRITO HTML */
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .sectionCarrito {
+        div {
+            align-items: center;
+            margin: 0;
+            padding: 3%;
+
+            h2 {
+                font-size: 1.2rem;
+
+                width: 100%;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            button {
+                width: 100%;
+
+                a {
+                    font-size: small;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .sectionCarrito {
+        div {
+            align-items: center;
+            margin: 0;
+            padding: 3%;
+
+            h2 {
+                font-size: 1.1rem;
+                width: 100%;
+            }
+
+            p {
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            button {
+                width: 50%;
+                margin-right: 55%;
+                height: auto;
+
+                a {
+                    font-size: small;
+                }
+            }
+        }
+    }
+
+}
+
+/* MEDIAS QUERIES REGISTRO HTML */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* Section Registro */
+
+    /* Primer Separador */
+
+    .separador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 30px;
+
+        span {
+            display: none;
+        }
+
+        p {
+            left: 0;
+        }
+    }
+
+    .camposRegistro {
+        width: 100%;
+
+        p {
+            margin-right: 40%;
+            margin-top: 15px;
+            right: 0;
+            font-size: 12px;
+        }
+
+        button {
+            width: 90%;
+        }
+    }
+}
+
+/* MEDIA QUERIES INGRESAR HTML */
+@media (min-width: 320px) and (max-width: 768px) {
+    /* Section "Ingresar" */
+
+    .camposRegistro {
+        ul {
+            width: 100%;
+        }
+
+        a {
+            margin-top: 25px;
+            margin-right: 5%;
+        }
+    }
+
+    .btnIngresar {
+        width: 90%;
+
+        button {
+            width: 100%;
+            margin-left: 1%;
+        }
+    }
+
+    /* Separador Uno*/
+
+    .separadorIngresar {
+        width: 95%;
+        margin-left: 3%;
+
+        p {
+            position: relative;
+            left: 45%;
+        }
+
+        span {
+            width: 100%;
+        }
+    }
+
+    /*  Registro con Google */
+
+    .continuarGoogle {
+        width: 90%;
+
+        a {
+            width: 100%;
+            margin-left: 6%;
+            margin-right: 5%;
+        }
+    }
+
+    /* Link a Registrarse */
+
+    .registroIngresar {
+        width: 100%;
+
+        a {
+            width: 90%;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    /* Container Información */
+
+    .registroInfo div {
+        width: 80%;
+    }
+}
+
+
+/*/* ******************************************* */
+/* MEDIA QUERIES CONTACTO HTML */
+@media (min-width: 320px) and (max-width: 810px) {
+    /* Titulo */
+
+    .sectionTitulo {
+        h1 {
+            font-size: 3rem;
+        }
+
+        div {
+            width: 60%;
+        }
+    }
+
+    /* Section "Sobre Nosotros" */
+
+    .sectionNosotros {
+        height: 20%;
+        padding: 2%;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 2vh;
+            margin-top: 2vh;
+        }
+    }
+
+    /* Section "Atención al cliente" */
+
+    .sectionAtencionCliente {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .uneteNosotros {
+        margin-right: 3%;
+    }
+
+    /* Section "Dejanos un Comentario" */
+
+    .sectionComentarios {
+        margin-top: 90px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mensajeComentarios {
+        height: 200px;
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .dos {
+        height: 90%;
+        width: 90%;
+        margin-left: 5%;
+        padding: 0 3% 0 3%;
+
+        h3 {
+            margin-top: 5%;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 10%;
+        }
+    }
+
+    /* Formularios  */
+
+    .formularioComentarios {
+        margin-top: 20px;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .camposRellenar {
+        margin-right: 5%;
+
+        input {
+            width: 100%;
+            height: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    #formMensaje {
+        margin-top: 15px;
+    }
+
+    .btnContacto {
+        justify-content: flex-end;
+    }
+
+    /* Section "Donde estamos?" */
+
+    .contactoUbicacion {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .dos {
+        h3 {
+            margin-top: 20%;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 20%;
+        }
+    }
+}
+
+//MEDIAS PROMOCIONES Y CAROUSEL
+
+@media (min-width: 1200px) {
+    .containerProductos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        margin-bottom: 10px;
+
+        div {
+
+            width: 100%;
+
+        }
+
+        .textoCards {
+            height: 40%;
+        }
+    }
+
+}
+
+//Tienda*************************************************
+@media (min-width: 1200px) {
+    .containerProductos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 10px;
+        margin-bottom: 10px;
+        grid-template-areas:
+            "vacio uno dos tres cuatro";
+
+        .cartaUno {
+            grid-area: uno;
+        }
+
+        .cartaDos {
+            grid-area: dos;
+        }
+
+        .cartaTres {
+            grid-area: tres;
+        }
+
+        .cartaCuatro {
+            grid-area: cuatro;
+        }
+
+        div {
+
+            width: 100%;
+
+        }
+
+    }
+
+    .cardCategorias {
+        height: 340px !important;
+        padding-top: 20px !important;
+
+        div {
+
+            h4 {
+                margin-right: 20px;
+            }
+
+            div {
+                height: 50px;
+
+
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .containerProductos {
+        .textoCards {
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+    .containerProductos {
+        .textoCards {
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    //CAROUSEL TAMAÑO
+    .containerPromos {
+        width: 100%;
+        margin-left: 0;
+
+        div {
+            a {
+                img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    .slide {
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .cardCategorias {
+        width: 100%;
+
+        div {
+
+            div {
+                width: 30%;
+
+                button {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+
+    .containerProductos {
+
+        div {
+            height: auto;
+
+            img {
+                height: 80%;
+            }
+        }
+    }
+
+    .textoCards {
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+    }
+
+    .filtrosCategorias {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 40px;
+
+        h5 {
+            display: none;
+        }
+
+        a {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .cartaTres {
+        display: none;
+    }
+
+    .cartaCuatro {
+        display: none;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .containerPromos {
+
+        div {
+            a {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .textoCards {
+
+        h3 {
+            font-size: 1.9rem;
+        }
+
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 500px) {
+    .textoCards {
+        h3 {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .textoCards {
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            opacity: 100%;
+
+            span {
+                opacity: 100%;
+            }
+        }
+    }
+
+    .cardCategorias {
+        width: 100%;
+
+        div {
+
+            div {
+                width: 30%;
+
+                button {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .textoCards {
+        h3 {
+            font-size: 2.4rem;
+        }
+
+    }
+}
+
+
+//MEDIAS SUBTITULOS******************************
+@media (min-width: 320px) and (max-width: 1200px) {
+    .subTitulo {
+        width: 100%;
+        margin-left: 0;
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            top: 20px;
+            margin-bottom: 20px;
+
+            span {
+                top: 0;
+            }
+        }
+
+        div {
+            display: none;
+
+        }
+
+        img {
+            display: none;
+        }
+
+        p {
+            text-align: center;
+            bottom: 0;
+            top: 25px;
+        }
+    }
+
+    .subTituloMenu {
+        text-align: center;
+
+        h5 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .subTitulo {
+        h2 {
+            font-size: 0.6rem;
+        }
+
+    }
+}
+
+@media (min-width: 360px) and (max-width: 470px) {
+
+    .subTitulo {
+        h2 {
+            font-size: 0.8rem;
+        }
+
+        div {
+            width: 60%;
+            height: 12px;
+            position: relative;
+            bottom: 15px;
+            left: 30px;
+
+        }
+    }
+}
+
+@media (min-width: 471px) and (max-width: 768px) {
+    .subTitulo {
+        margin-left: 0;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        div {
+            height: 20px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .subTitulo {
+
+        h2 {
+            span {
+                padding: 10px;
+            }
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+
+    }
+}
+
+//************ MEDIA TIENDA ****************
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    //categorias
+    .sectionCategorias {
+        margin-top: 50px;
+
+        div {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+
+            div {
+                display: none;
+            }
+
+            ul {
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+
+
+
+                li {
+
+                    a {
+                        p {
+                            width: 50%;
+                            position: relative;
+                            z-index: 2;
+                            bottom: 60%;
+                            margin-left: 25%;
+                            font-size: 1.4rem;
+                            background-color: $color-bg-header-a;
+                            padding: 10px;
+                            opacity: 80%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Opiniones comentarios
+    .comentarios {
+        grid-template-columns: 1fr;
+
+        #comDos {
+            display: none;
+        }
+
+        #comTres {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .sectionCategorias {
+        margin-top: 40px;
+
+        div {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+
+            div {
+                display: none;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        p {
+                            max-width: fit-content;
+                            position: relative;
+                            z-index: 2;
+                            bottom: 60%;
+                            margin-left: 30%;
+                            font-size: 1.8rem;
+                            background-color: $color-bg-header-a;
+                            padding: 10px;
+                            opacity: 80%;
+                            text-align: center;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .comentarios {
+        grid-template-columns: 1fr;
+
+        div {
+            padding: 0 15% 0 20%;
+
+            div {
+                width: 90%;
+                height: 250px;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        #comDos {
+            display: none;
+        }
+
+        #comTres {
+            display: none;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .containerProductos {
+
+        div {
+            margin-bottom: 5px;
+
+            img {
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            div {
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 550px) {
+
+    .sectionCategorias {
+
+        div {
+            ul {
+
+                li {
+
+                    a {
+                        p {
+                            max-width: min-content;
+                            margin-left: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .sectionCategorias {
+        margin-top: 40px;
+    }
+
+    .comentarios {
+
+        div {
+
+            div {
+
+                h6 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+
+                div {
+                    img {
+                        display: none;
+                    }
+                }
+
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+
+    }
+}
+
+@media (min-width: 380px) and (max-width: 768px) {
+    .cardCategorias {
+
+        div {
+
+            div {
+
+                .btnPrimarioCategorias {
+                    width: 70%;
+                }
+
+                .btnSecundarioCategorias {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

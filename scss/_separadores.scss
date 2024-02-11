@@ -1,0 +1,101 @@
+/********** Container Separador ************/
+
+.separador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span {
+        background-color: rgb(139, 138, 138);
+        position: relative;
+        width: 400px;
+        height: 1px;
+        z-index: 1;
+        top: 10px;
+        right: 97px;
+    }
+
+    p {
+        z-index: 2;
+        position: relative;
+        left: 200px;
+        background-color: rgb(244, 230, 230);
+        padding-left: 10px;
+        padding-right: 10px;
+        color: rgb(80, 78, 78);
+    }
+}
+
+/* ************************* */
+
+
+/* **********************Segundo Separador**************** */
+
+.segundoSeparador {
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+/* ************ */
+
+/* Separador de Ingresar */
+
+.separadorIngresar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span {
+        background-color: rgb(139, 138, 138);
+        position: relative;
+        width: 400px;
+        height: 1px;
+        z-index: 1;
+        top: 10px;
+        right: 24px;
+    }
+
+    p {
+        z-index: 2;
+        position: relative;
+        width: 50px;
+        text-align: center;
+        left: 200px;
+        background-color: rgb(244, 230, 230);
+        color: rgb(80, 78, 78);
+        font-size: 14px;
+    }
+}
+
+/* Separador Ingresar Dos */
+
+.separadorIngresarDos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span {
+        background-color: rgb(139, 138, 138);
+        position: relative;
+        width: 400px;
+        height: 1px;
+        z-index: 1;
+        top: 10px;
+        right: 100px;
+    }
+
+    p {
+        z-index: 2;
+        position: relative;
+        width: 200px;
+        text-align: center;
+        left: 200px;
+        background-color: rgb(244, 230, 230);
+        color: rgb(80, 78, 78);
+        font-size: 14px;
+    }
+}

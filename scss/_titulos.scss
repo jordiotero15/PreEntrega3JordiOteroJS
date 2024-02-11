@@ -1,0 +1,90 @@
+/* *********************************************** */
+/* Titulo */
+
+.titulo {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Section "Titulo" */
+
+.sectionTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 189, 189);
+
+    div {
+        background-color: #c7a432;
+        width: 50%;
+        height: 30px;
+        opacity: 35%;
+        position: relative;
+        bottom: 35px;
+    }
+}
+
+//******************************
+//SUBTITULO
+
+.subTitulo {
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 40px;
+
+    h2 {
+        position: relative;
+        z-index: 2;
+        font-size: 2rem;
+
+        span {
+            text-transform: uppercase;
+            background-color: rgb(28, 27, 27);
+            color: white;
+            position: relative;
+            top: 10px;
+            padding: 20px;
+        }
+    }
+
+    div {
+        background-color: #c7a432;
+        width: 50%;
+        height: 18px;
+        opacity: 25%;
+        position: relative;
+        bottom: 23px;
+        right: 10px;
+
+    }
+
+    p {
+        text-transform: uppercase;
+        opacity: 90%;
+        position: relative;
+        bottom: 60px;
+        z-index: 3;
+    }
+
+    img {
+        position: relative;
+        left: 580px;
+        bottom: 7px;
+        width: 50px;
+        z-index: 3;
+    }
+}
+
+//SUBTITULOS DE PRODUCTOS - TIENDA HTML
+
+.subTituloMenu {
+    margin-top: 40px;
+
+    h5 {
+        margin-left: 20%;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,180 @@
+/* ------------------------- HEADER ---------------------------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.navbar {
+    padding: 0;
+    flex-direction: column;
+}
+
+
+//SECTION DE "REDES"
+.containerRedes {
+    height: 50px;
+
+    ul {
+        margin-top: 12px;
+        margin-right: 0.5%;
+
+        p {
+            height: 16px;
+            margin-top: 8px;
+            margin-right: 8px;
+        }
+    }
+}
+
+.containerEncabezado {
+    background-color: $color-bg-header-a;
+    border-bottom: 1px solid rgb(192, 189, 189);
+
+
+}
+
+/* LOGO "PANADERIA PARIS"*/
+
+.logo {
+    cursor: pointer;
+    width: 125px;
+    height: 125px;
+    transition: all 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/*  */
+/* MENU PRINCIPAL */
+
+
+.menuNavegacion li {
+    font-size: 1.2rem;
+    
+    a {
+        @include flex-row-center;
+        transition: all 0.5s;
+        height: 50px;
+        color: black;
+
+        &:hover {
+            background-color: $color-bg-header-a-hover;
+            opacity: 84%;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+
+}
+
+/* ACTIVE */
+
+.active a {
+    @include anclas;
+    color: rgb(255, 255, 255) !important;
+    background-color: $color-bg-header-a-hover;
+    font-size: 1.3rem;
+    opacity: 84%;
+    text-shadow: none;
+}
+
+/* MENU DESPLEGABLE */
+.desplegable {
+    position: relative;
+    text-align: center;
+    width: 230px;
+
+}
+/* SEPARADOR DE "MI CUENTA" */
+
+.separadorHeader {
+    text-shadow: none !important;
+
+    span {
+        color: rgb(139, 138, 138);
+    }
+}
+.ingresar {
+    background-color: $color-bg-header-a;
+    color: white;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: $color-bg-header-a-hover;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* CONTAINER GOOGLE */
+
+.containerGoogle {
+    @include flex-row-center;
+
+    a {
+        @include flex-row-center;
+        width: 90%;
+        height: 32px;
+        padding: 10px;
+        font-size: 1rem;
+        background-color: white;
+        border: 1px solid rgba(34, 34, 34, 0.178);
+        border-radius: 8px;
+        color: rgb(0, 0, 0);
+        transition: all 0.7s;
+        text-shadow: none;
+
+        &:hover {
+            background-color: rgb(221, 241, 248) !important;
+            border: 2px solid rgb(188, 227, 240);
+            text-shadow: none;
+        }
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}
+
+/* BARRA DE BUSQUEDA */
+.containerBuscador {
+    width: 30%;
+
+    input {
+        &:hover {
+            border: 2px solid $color-fondo;
+
+        }
+
+
+    }
+
+    button {
+        position: relative;
+        right: 40px;
+        top: 2px;
+        background-color: $color-bg-header-a;
+        width: 40px;
+        border-radius: 100px;
+        border: none;
+        transition: all 0.4s;
+        height: 34px;
+
+        &:hover {
+            background-color: $color-fondo;
+            color: white;
+        }
+
+        &:focus {
+            border: 2;
+        }
+    }
+}

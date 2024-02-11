@@ -1,0 +1,108 @@
+////CAROUSEL
+.slide {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.containerPromos {
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid $color-bg-header-a;
+
+    div {
+        a {
+            img {
+                height: 300px;
+                @include img-cover-center;
+            }
+        }
+    }
+}
+
+.containerProductos {
+    div {
+        height: 400px;
+        padding: 5px;
+        background-color: $color-fondo;
+        text-align: center;
+        border: none;
+        box-shadow: 0px 0px 6px 0px rgba(170, 164, 164, 0.75);
+
+        img {
+            height: 60%;
+            width: 95%;
+            margin-left: 2.5%;
+            @include img-cover-center;
+            border-radius: 10px;
+        }
+
+        div {
+            border: none;
+            box-shadow: none;
+        }
+
+    }
+}
+
+//Texto de las Cards
+.textoCards {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-bg-header-a;
+    opacity: 80%;
+   
+
+    h3 {
+        opacity: 100%;
+        font-size: 3rem;
+        color: black;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    p {
+        color: black;
+        opacity: 95%;
+        font-size: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: lowercase;
+
+        span {
+            color: red;
+            text-decoration: line-through;
+            opacity: 75%;
+        }
+    }
+
+    button {
+        background-color: $color-bg-header-a;
+        border: none;
+        color: black;
+        transition: all 0.4s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        width: 50%;
+
+
+        &:hover {
+            background-color: rgb(255, 221, 163);
+        }
+    }
+
+    div {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+}

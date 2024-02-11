@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+//BODY
+body {
+    background-color: $color-fondo;
+}
+
+//MAIN
+main {
+    margin-bottom: 20px;
+}

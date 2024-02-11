@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bienvenido a Panadería París, tu segunda familia donde te esperamos con los mejores productos del mercado.">
+    <title>Inicio | Panadería París</title>
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid containerRedes bg-dark d-flex me-4 justify-content-end ">
+                <ul class="list-unstyled list-inline d-flex align-items-center">
+                    <p class="text-white align-self-center"> Síguenos en nuestras redes: </p>
+                    <li class="list-inline-item" title="Facebook"><a href="https://es-la.facebook.com/"
+                            class="text-white" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item" title="Instagram"><a href="https://www.instagram.com/"
+                            class="text-white" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item" title="Whats App"><a
+                            href="https://api.whatsapp.com/send?phone=+58993520624&text=Hola,%20necesito%20ayuda!"
+                            target="_blank" class="text-white"> <i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="container-fluid containerEncabezado">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logo.png" alt="Logo Panadería París"></a>
+                <button class="navbar-toggler navHambur" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menuNavegacion">
+                        <li class="nav-item active" title="Inicio">
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item" title="Tienda">
+                            <a class="nav-link" href="html/tienda.html">Tienda</a>
+                        </li>
+
+                        <li class="nav-item" title="Promociones">
+                            <a class="nav-link" href="html/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item" title="Contacto">
+                            <a class="nav-link" href="html/contactos.html">Contacto</a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex ms-3 containerBuscador" role="search">
+                        <input class="form-control me-0 rounded-5" type="search" placeholder="Buscar"
+                            aria-label="Search" title="Buscar">
+                        <button class="btnBuscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <ul class="navbar-nav  menuNavegacion">
+                        <li class="nav-item dropdown" title="Mi Cuenta">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mi Cuenta
+                            </a>
+                            <ul class="dropdown-menu desplegable">
+                                <li><a class="dropdown-item ingresar" href="html/ingreso.html"
+                                        title="Ingresar">Ingresar</a>
+                                </li>
+                                <li class="separadorHeader text-secondary">
+                                    o
+                                </li>
+                                <li class="containerGoogle text-secondary" title="Continuar con Google">
+                                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2Fgsi%2Fselect%3Fclient_id%3D575783686381-0tl98vq12r95o4rcr39foo2qtb9qdgfp.apps.googleusercontent.com%26ux_mode%3Dpopup%26ui_mode%3Dcard%26as%3DUx605J9Fal5UgDwy7x3dUA%26channel_id%3Dd544a0b3b38e9550eff20280c6fc4b4ce2d6314a7eed47c3ad99598d71956403%26origin%3Dhttps%3A%2F%2Ftiendamia.com&faa=1&ifkv=AYZoVhcUEpzfhlSRX2Rj8_m7A38KyBnAqYr5Cd_HHLo5p63-sFr193kiSOS79JnR7GP8RuTFiMnp&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-385565411%3A1697001458043094&theme=glif"
+                                        target="_blank"><img src="img/gGoogle.jpg" alt="Google">Continuar con
+                                        Google</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item " title="Ayuda">
+                            <a class="nav-link" href="html/ayuda.html">Ayuda</a>
+                        </li>
+                        <li class="nav-item cart" title="Carrito">
+                            <a class="nav-link text-secondary" href="html/cart.html"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="indexMain">
+        <!-- Section "Titulo" -->
+        <section class="sectionTitulo" id="dulces">
+            <h1 class="titulo"> Panadería París </h1>
+            <div></div>
+        </section>
+
+        <!-- SECTION "SUBTITULO" -->
+        <section class="subTitulo">
+            <h2> Todos Nuestros Productos <span>a un click</span></h2>
+            <div></div>
+            <img src="img/clickMouse.png" alt="Click Mouse">
+            <p>Ahora desde nuestra tienda online</p>
+        </section>
+
+        <!-- SECTION "MENU CATEGORIAS" -->
+        <section class="sectionCategorias">
+            <div>
+                <ul class="containerCategorias">
+                    <li class="categorias"><a href="html/tienda.html#dulces">
+                            <img src="img/categoriaBizcochos.jpg" alt="">
+                            <p>Bizcochos</p>
+                        </a>
+
+                    </li>
+                    <li class="categorias"><a href="html/tienda.html#masas">
+                            <img src="img/confiteria.jpg" alt="Confitería">
+                            <p>Confitería</p>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <ol>
+                        <li>Bizcochos</li>
+                        <li>Confitería</li>
+                    </ol>
+                </div>
+                <ul class="containerCategorias">
+                    <li class="categorias"><a href="html/tienda.html#rotiseria">
+                            <img src="img/rotiseria.jpg" alt="Rotisería">
+                            <p>Rotisería</p>
+                        </a>
+                    </li>
+                    <li class="categorias"><a href="html/tienda.html#bebidas">
+                            <img src="img/market.jpg" alt="Mini-market">
+                            <p>Mini-Market</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="subCatDos">
+                    <ol>
+                        <li>Rotisería</li>
+                        <li id="textMini">Mini-Market</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- SECTION "SUBTITULO" -->
+    <section class="subTitulo">
+        <h2> Opiniones de nuestros clientes </h2>
+        <div></div>
+    </section>
+    <!-- SECTION "COMENTARIOS" -->
+    <section id="carouselExampleSlidesOnly" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="comentarios">
+                    <div>
+                        <div>
+                            <h6>Rosario Coitinho</h6>
+                            <p>Más que recomando!<br>Somos clientes de hace años, y hasta la fecha los seguimos
+                                eligiendo por
+                                encima
+                                del resto.</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+
+                        </div>
+                        <img src="img/usuarios/rosarioCoitinho.jpeg" alt="Rosario">
+                    </div>
+
+                    <div id="comDos">
+                        <div>
+                            <h6>Daniel Cardozo</h6>
+                            <p>Excelentes productos! <br>
+                                Nunca decepcionan.</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+                        </div>
+                        <img src="img/usuarios/daniel.jpeg" alt="Daniel Cardozo">
+                    </div>
+
+                    <div id="comTres">
+                        <div>
+                            <h6>Natasha Sanchez</h6>
+                            <p>Perfecto todo, como siempre!</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+                        </div>
+                        <img src="img/usuarios/natasha.jpg" alt="Natasha Sanchez">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="comentarios">
+                    <div>
+                        <div>
+                            <h6>Jordi Otero</h6>
+                            <p>Lugar increíble, excelentes productos y muy buena atención.</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+
+                        </div>
+                        <img src="img/usuarios/jordiOtero.jpg" alt="Jordi Otero">
+                    </div>
+
+                    <div id="comDos">
+                        <div>
+                            <h6>Ignacio Sosa</h6>
+                            <p>Los bizcochos más ricos que he probado, súper recomendado!</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+                        </div>
+                        <img src="img/usuarios/ignacioSosa.jpg" alt="ignacioSosa">
+                    </div>
+
+                    <div id="comTres">
+                        <div>
+                            <h6>Martin Luque</h6>
+                            <p>Una exquisitez los bizcochos, nunca fallan, entrega en tiempo y forma como de
+                                costumbre.</p>
+                            <div>
+                                <img src="img/logo.png" alt="Panadería París">
+                            </div>
+                        </div>
+                        <img src="img/usuarios/martinLuque.jpeg" alt="Martin Luque">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    </main>
+    <footer class="bg-dark pt-5 pb-1 container-fluid">
+        <div class="text-secondary text-center text-md-start">
+            <div class="row text-center text-md-start containerFooter">
+                <!-- Titulo Header -->
+                <section class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-white">Panadería París</h5>
+                    <hr class="mb-4 text-white">
+                    <h6 class="text-white text-ms-1 ">Ubicación</h6>
+                    <iframe class="mb-4"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5506.956121543739!2d-56.249412097615455!3d-34.8447753377233!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1696320298078!5m2!1ses-419!2suy"
+                        width="" height="" style="border-radius: 10px; " allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </section>
+                <!-- Section "Secciones" -->
+                <section class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-white">Secciones</h5>
+                    <hr class="mb-4 text-white">
+                    <ul class="p-0">
+                        <li><a class="text-secondary" href="#">Inicio</a></li>
+                        <li><a class="text-secondary" href="html/tienda.html">Tienda</a></li>
+                        <li><a class="text-secondary" href="html/promociones.html">Promociones</a></li>
+                        <li><a class="text-secondary" href="html/contactos.html#pageContacto">Contacto</a></li>
+                        <li><a class="text-secondary" href="html/ingreso.html">Mi Cuenta</a></li>
+                    </ul>
+                </section>
+                <!-- Section "Contacto" -->
+                <section class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                    <h5 class="mb-4 font-weight-bold text-white">Contacto</h5>
+                    <hr class="mb-4 text-white">
+                    <ul class="p-0">
+                        <li class="fas fa-home me-2 text-white"></li>
+                        Av. Luis Batlle Berres 5830, Nuevo París, Mvdeo. <br>
+                        <li class="fas fa-envelope me-2 text-white"></li>pparis@pparis.com<br>
+                        <li class="fas fa-phone me-2 text-white"></li>+598 9900 0000 <br>
+                    </ul>
+                </section>
+
+                <hr class="text-center mb-2 text-white">
+                <!-- Section "Copyrights" -->
+                <div class="text-center mb-2">
+                    <p>2023 - Panadería París - Copyrights - Todos los derechos reservados</p>
+                </div>
+                <!-- Section "Redes Sociales" -->
+                <section class="text-center">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item" title="Facebook"><a href="https://es-la.facebook.com/"
+                                class="text-white" target="_blank"> <i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item" title="Instagram"><a href="https://www.instagram.com/"
+                                class="text-white" target="_blank"> <i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item" title="Whats App"><a
+                                href="https://api.whatsapp.com/send?phone=+58993520624&text=Hola,%20necesito%20ayuda!"
+                                target="_blank" class="text-white"> <i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- Section "Logo WhatsApp" -->
+        <section>
+            <a href="https://api.whatsapp.com/send?phone=+58993520624&text=Hola,%20necesito%20ayuda!" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl whats" title="WhatsApp"></i></a>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./db/productos.js"></script>
+    <script type="module" src="./db/usuarios.js"></script>
+    <script type="module" src="./js/usuario.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
