@@ -54,7 +54,7 @@ header {
 
 .menuNavegacion li {
     font-size: 1.2rem;
-    
+
     a {
         @include flex-row-center;
         transition: all 0.5s;
@@ -89,6 +89,7 @@ header {
     width: 230px;
 
 }
+
 /* SEPARADOR DE "MI CUENTA" */
 
 .separadorHeader {
@@ -98,6 +99,7 @@ header {
         color: rgb(139, 138, 138);
     }
 }
+
 .ingresar {
     background-color: $color-bg-header-a;
     color: white;
@@ -177,4 +179,26 @@ header {
             border: 2;
         }
     }
+}
+
+// #carrito{
+//     display: none;
+//     position: fixed;
+//     top: 10%;
+//     right: 10%;
+//     width: 30%;
+//     height: auto;
+//     background-color: white;
+//     z-index: 1000;
+// }
+
+.carrito {
+    display: none;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    z-index: 1000;
 }

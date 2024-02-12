@@ -69,8 +69,8 @@
                                 Mi Cuenta
                             </a>
                             <ul class="dropdown-menu desplegable">
-                                <li><a class="dropdown-item ingresar" href="html/ingreso.html"
-                                        title="Ingresar">Ingresar</a>
+                                <li><a id="userLogin" class="dropdown-item ingresar" href="html/ingreso.html"
+                                        title="Ingresar"></a>
                                 </li>
                                 <li class="separadorHeader text-secondary">
                                     o
@@ -81,7 +81,6 @@
                                         Google</a>
                                 </li>
                             </ul>
-
                         </li>
                         <li class="nav-item " title="Ayuda">
                             <a class="nav-link" href="html/ayuda.html">Ayuda</a>
@@ -152,6 +151,10 @@
                     </ol>
                 </div>
             </div>
+        </section>
+        <!-- SECTION "MENU" -->
+        <section class="container-fluid">
+            <div id="productos" class="row containerProductos"></div>
         </section>
     </main>
     <!-- SECTION "SUBTITULO" -->
@@ -250,6 +253,26 @@
     </section>
 
     </main>
+    <div id="user__register" class="camposRegistro">
+        <ul>
+            <li class="camposRellenar"><label for="new__user"></label><input id="new__user" type="text"
+                    placeholder="Nombre" title="Nombre"></li>
+            <li class="camposRellenar"><label for="new__email"></label><input id="new__email" type="email"
+                    placeholder="Tu dirección de E-mail" title="E-mail"></li>
+            <li class="camposRellenar"><label for="new__password"></label><input id="new__password"
+                    type="password" placeholder="Contraseña" title="Contraseña"></li>
+        </ul>
+        <div>
+            <p>*La contraseña debe tener al menos 6 caracteres.</p>
+        </div>
+        <ul class="checkboxRegistro">
+            <li>
+                <input type="checkbox" name="suscribirse" title="Quiero recibir ofertas en mi E-mail"
+                    id="suscribirse"><label for="suscribirse">Recibir Ofertas!</label>
+            </li>
+        </ul>
+        <button type="submit" id="btn__register" title="Enviar">Regístrate</button>
+    </div>
     <footer class="bg-dark pt-5 pb-1 container-fluid">
         <div class="text-secondary text-center text-md-start">
             <div class="row text-center text-md-start containerFooter">

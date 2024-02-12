@@ -61,14 +61,12 @@ const validarYLogin = (email, pass) => {
 btnRegister.addEventListener("click", (e) => {
     //Mediante el paramatro "e" hacemos referencia al evento para evitar que se recargue la pag (debido al btn con funcion submit)
     e.preventDefault();
-    console.log("Click event triggered");
     //Seleccionamos del primero al ultimo hijo en este caso del form User Register para conocer los datos de usuario
     const user = formRegister.children[0].children[0].children[1].value;
-    console.log(user);
-    //Buscamos la info de la contraseña como el paso anterior
-    // const email = formRegister.children[0].children[1].children[1].value;
+    
+    const email = formRegister.children[0].children[1].children[1].value;
 
-    // const pass = formRegister.children[0].children[2].children[1].value;
+    const pass = formRegister.children[0].children[2].children[1].value;
 
     // //Para crear nuevo usuario y le pasamos el constructor
     const nuevoUsuario = new newUser(user, email, pass);
@@ -86,7 +84,7 @@ const validarYRegistrar = (nuevoUsuario) => {
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
         //Mandamos al local storage ese nuevo usuario
         sessionStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
-        alert(`Gracias ${nuevoUsuario.user}por registrarse, usted sera redirigido a la pagina principal.`);
+        alert(`Bienvenido ${nuevoUsuario.user}, a continuación será redirigido a la página principal.`);
         location.href = "../index.html";
     } else {
         alert("El usuario ya existe!");
