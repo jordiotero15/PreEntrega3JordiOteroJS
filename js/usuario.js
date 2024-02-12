@@ -47,7 +47,7 @@ const validarYLogin = (email, pass) => {
             pass: userExiste.pass,
             email: userExiste.email,
             admin: userExiste.admin
-        }
+        };
 
         //Ingresamos los datos de dicho usuario a la sessionStorage
         sessionStorage.setItem("usuario", JSON.stringify(usuario));

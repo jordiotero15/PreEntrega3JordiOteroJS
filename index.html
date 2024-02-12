@@ -85,8 +85,8 @@
                         <li class="nav-item " title="Ayuda">
                             <a class="nav-link" href="html/ayuda.html">Ayuda</a>
                         </li>
-                        <li class="nav-item cart" title="Carrito">
-                            <a class="nav-link text-secondary" href="html/cart.html"><i
+                        <li id="btnCarrito" class="nav-item cart" title="Carrito">
+                            <a class="nav-link text-secondary" href="#"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
                         </li>
                     </ul>
@@ -156,6 +156,22 @@
         <section class="container-fluid">
             <div id="productos" class="row containerProductos"></div>
         </section>
+        <div id="carrito" class="carrito">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Unidedes</th>
+                        <th>Costo Unitario</th>
+                        <th>Costo Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot id="totales"></tfoot>
+            </table>
+        </div>
     </main>
     <!-- SECTION "SUBTITULO" -->
     <section class="subTitulo">
@@ -253,26 +269,7 @@
     </section>
 
     </main>
-    <div id="user__register" class="camposRegistro">
-        <ul>
-            <li class="camposRellenar"><label for="new__user"></label><input id="new__user" type="text"
-                    placeholder="Nombre" title="Nombre"></li>
-            <li class="camposRellenar"><label for="new__email"></label><input id="new__email" type="email"
-                    placeholder="Tu dirección de E-mail" title="E-mail"></li>
-            <li class="camposRellenar"><label for="new__password"></label><input id="new__password"
-                    type="password" placeholder="Contraseña" title="Contraseña"></li>
-        </ul>
-        <div>
-            <p>*La contraseña debe tener al menos 6 caracteres.</p>
-        </div>
-        <ul class="checkboxRegistro">
-            <li>
-                <input type="checkbox" name="suscribirse" title="Quiero recibir ofertas en mi E-mail"
-                    id="suscribirse"><label for="suscribirse">Recibir Ofertas!</label>
-            </li>
-        </ul>
-        <button type="submit" id="btn__register" title="Enviar">Regístrate</button>
-    </div>
+
     <footer class="bg-dark pt-5 pb-1 container-fluid">
         <div class="text-secondary text-center text-md-start">
             <div class="row text-center text-md-start containerFooter">
