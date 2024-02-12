@@ -123,7 +123,7 @@ const dibujarFooter = () => {
         let footer = document.createElement("tr");
 
         footer.innerHTML = `
-      <th><b>Totales:</b></th>
+      <th><b>Total:</b></th>
       <td></td>
       <td>${generarTotales().cantidadTotal}</td>
       <td></td>
