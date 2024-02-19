@@ -1,8 +1,8 @@
 export let usuarioDb = [{
     id: 1,
     user: "Jordi",
-    pass: "coderhouse",
     email: "jordiotero15@gmail.com",
+    pass: "coderhouse",
     admin: true,
 }];
 

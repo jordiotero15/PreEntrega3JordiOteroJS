@@ -2,6 +2,8 @@
 import { comprarProductos } from "./cart.js";
 
 
+
+
 //Traemos el div para la card de productos
 const divProductos = document.getElementById("productos");
 
@@ -26,10 +28,10 @@ export let productosDisponibles = JSON.parse(localStorage.getItem("productos"));
 //Llamamos al usuario logueado
 let usuarioLogueado = JSON.parse(sessionStorage.getItem("usuario"));
 
-
 //////////////////////////
 //Creamos Evento Para generar el documento siguiente (Son eventos que comienzan ni bien se abre la pagina)
 document.addEventListener("DOMContentLoaded", () => {
+    //Declaramos la varible de user para poder utilizar el nombre de usuario
     if (usuarioLogueado === null) {
         //Creamos el enlace para ingresar en caso de no estar logueado
         const a = document.createElement("a");
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         a.innerHTML = `Ingresar`;
         userLogin.append(a);
     } else {
+
         //En caso contrario aparece nombre de usuario
         //Y creamos boton para cierre de sesión
         const p = document.createElement("p");
@@ -45,11 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         close.id = "cerrar__session";
         close.innerHTML = `Cerrar sesión`;
         close.addEventListener("click", () => {
-            alert(`Gracias por comprar en nuestra tienda ${usuarioLogueado.user}.`);
             //Hacemos que se elimine de la sessionStorage ese usuario logueado
             sessionStorage.removeItem("usuario");
             //Recargamos la pag
             location.reload();
+
 
         })
 
@@ -183,5 +186,5 @@ filterPrecio.addEventListener("click", (e) => {
         productos = productosDisponibles.sort((a, b) => b.precio - a.precio);
     }
 
-    generarCardsProductos(productos)
+    generarCardsProductos(productos);
 })
