@@ -70,12 +70,20 @@ export const comprarProductos = (idProducto) => {
     }
     //Actualizamos nuestro carrito original luego de las condicionales
     carrito = JSON.parse(sessionStorage.getItem("carrito"));
-    let confirmacion = confirm(`Está a punto de comprar el producto ${nombre}, ¿Deseas continuar?`);
-    if (confirmacion) {
-        alert(`Usted compró con exito el producto ${nombre}`);
-    } else {
-        alert("Se ha cancelado la acción.");
-    }
+
+    //Mensaje de confirmacion para compra de productos
+    Swal.fire({
+        title: `Está a punto de comprar ${nombre}, ¿Deseas continuar?`,
+        showDenyButton: true,
+        confirmButtonText: "Aceptar",
+        denyButtonText: `Cancelar`
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire(`Usted compró con exito ${nombre}`, "", "success");
+        } else if (result.isDenied) {
+            Swal.fire("Operación cancelada.", "", "info");
+        }
+    });
 
 };
 
@@ -177,13 +185,13 @@ const restarCantidad = (id) => {
     carrito[indexProductoCarrito].cantidad--;
 
     carrito[indexProductoCarrito].precio = precio * carrito[indexProductoCarrito].cantidad;
-  
+
     if (carrito[indexProductoCarrito].cantidad === 0) {
-      carrito.splice(indexProductoCarrito, 1)
+        carrito.splice(indexProductoCarrito, 1)
     }
 
     sessionStorage.setItem("carrito", JSON.stringify(carrito));
-  
+
     dibujarCarrito();
-  };
-  /////////////////////////////////////////////////////////////////
+};
+/////////////////////////////////////////////////////////////////
