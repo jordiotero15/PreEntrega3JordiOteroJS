@@ -63,13 +63,12 @@
                     </form>
                     <ul class="navbar-nav  menuNavegacion">
                         <li class="nav-item dropdown" title="Mi Cuenta">
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Mi Cuenta
                             </a>
                             <ul class="dropdown-menu desplegable">
-                                <li><a id="userLogin" class="dropdown-item ingresar" href="html/ingreso.html"
-                                        title="Ingresar"></a>
+                                <li id="userLogin" class="dropdown-item ingresar" title="Ingresar">
                                 </li>
                                 <li class="separadorHeader text-secondary">
                                     o
@@ -114,8 +113,9 @@
                     <p>O registrate con tu email</p>
                     <span class="linea"></span>
                 </div>
+                <p id="btn__login"></p>
                 <!-- Formulario para Registro -->
-                <!-- <div id="user__register" class="camposRegistro">
+                <div id="user__register" class="camposRegistro">
                     <ul>
                         <li class="camposRellenar"><label for="new__user"></label><input id="new__user" type="text"
                                 placeholder="Nombre" title="Nombre"></li>
@@ -134,7 +134,7 @@
                         </li>
                     </ul>
                     <button type="submit" id="btn__register" title="Enviar">Regístrate</button>
-                </div> -->
+                </div>
                 <!-- Separador -->
                 <div class="segundoSeparador">
                     <div class="separador">
@@ -230,11 +230,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../db/productos.js"></script>
     <script type="module" src="../db/usuarios.js"></script>
     <script type="module" src="../js/usuario.js"></script>
-    <script type="module" src="../js/cart.js"></script>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/cart.js"></script>
 </body>
 
 </html>

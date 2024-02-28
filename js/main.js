@@ -35,7 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (usuarioLogueado === null) {
         //Creamos el enlace para ingresar en caso de no estar logueado
         const a = document.createElement("a");
-        a.href = "./html/ingreso.html";
+        // Verificamos si el usuario está en index.html
+        if (window.location.pathname.includes("index.html")) {
+            // Si está en index.html, redirigimos a otra página
+            a.href = "./html/ingreso.html";
+        } else {
+            a.href = "./ingreso.html";
+        }
         a.innerHTML = `Ingresar`;
         userLogin.append(a);
     } else {
@@ -52,10 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.removeItem("usuario");
             //Recargamos la pag
             location.reload();
-
-
         })
-
         //Agregamos a ambos
         userLogin.appendChild(p);
         userLogin.appendChild(close);

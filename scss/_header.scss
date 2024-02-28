@@ -104,14 +104,21 @@ header {
     background-color: $color-bg-header-a;
     color: white;
     border-radius: 8px;
-    width: 90%;
+    width: 100%;
     margin-left: 5%;
     transition: all 0.4s;
 
-    &:hover {
-        background-color: $color-bg-header-a-hover;
-        color: rgb(255, 255, 255);
-    }
+    // &:hover {
+    //     background-color: $color-bg-header-a-hover;
+    //     color: rgb(255, 255, 255);
+    // }
+    // #userLogin {
+    //     transition: all 0.4s;
+    //     &:hover {
+    //         background-color: $color-bg-header-a-hover;
+    //         color: rgb(255, 255, 255);
+    //     }
+    // }
 }
 
 /* CONTAINER GOOGLE */
