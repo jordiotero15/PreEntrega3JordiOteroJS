@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,10 +39,12 @@ header {
 .containerRedes {
   height: 50px;
 }
+
 .containerRedes ul {
   margin-top: 12px;
   margin-right: 0.5%;
 }
+
 .containerRedes ul p {
   height: 16px;
   margin-top: 8px;
@@ -60,6 +63,7 @@ header {
   height: 125px;
   transition: all 0.3s;
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
@@ -69,6 +73,7 @@ header {
 .menuNavegacion li {
   font-size: 1.2rem;
 }
+
 .menuNavegacion li a {
   display: flex;
   justify-content: center;
@@ -77,6 +82,7 @@ header {
   height: 50px;
   color: black;
 }
+
 .menuNavegacion li a:hover {
   background-color: rgb(100, 99, 99);
   opacity: 84%;
@@ -105,6 +111,7 @@ header {
 .separadorHeader {
   text-shadow: none !important;
 }
+
 .separadorHeader span {
   color: rgb(139, 138, 138);
 }
@@ -116,7 +123,9 @@ header {
   width: 90%;
   margin-left: 5%;
   transition: all 0.4s;
+  padding: 0;
 }
+
 .ingresar:hover {
   background-color: rgb(100, 99, 99);
   color: rgb(255, 255, 255);
@@ -128,6 +137,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .containerGoogle a {
   display: flex;
   justify-content: center;
@@ -143,24 +153,58 @@ header {
   transition: all 0.7s;
   text-shadow: none;
 }
+
 .containerGoogle a:hover {
   background-color: rgb(221, 241, 248) !important;
   border: 2px solid rgb(188, 227, 240);
   text-shadow: none;
 }
+
 .containerGoogle img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
+/*++++++++++++++++++ Clases de prueba ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.nuevaClase {
+  display: none;
+}
+
+.nuevaClaseDos {
+  display: none;
+}
+
+.btnCerrar {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  height: 30px;
+  border: none;
+}
+
+.userName {
+  background-color: #e5cfa5;
+  border: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+}
+
+
+
 /* BARRA DE BUSQUEDA */
 .containerBuscador {
   width: 30%;
 }
+
 .containerBuscador input:hover {
   border: 2px solid rgb(244, 230, 230);
 }
+
 .containerBuscador button {
   position: relative;
   right: 40px;
@@ -172,10 +216,12 @@ header {
   transition: all 0.4s;
   height: 34px;
 }
+
 .containerBuscador button:hover {
   background-color: rgb(244, 230, 230);
   color: white;
 }
+
 .containerBuscador button:focus {
   border: 2;
 }
@@ -197,6 +243,7 @@ header {
   align-items: center;
   border-bottom: 1px solid rgb(192, 189, 189);
 }
+
 .sectionTitulo div {
   background-color: #c7a432;
   width: 50%;
@@ -211,11 +258,13 @@ header {
   margin-left: 35%;
   margin-top: 40px;
 }
+
 .subTitulo h2 {
   position: relative;
   z-index: 2;
   font-size: 2rem;
 }
+
 .subTitulo h2 span {
   text-transform: uppercase;
   background-color: rgb(28, 27, 27);
@@ -224,6 +273,7 @@ header {
   top: 10px;
   padding: 20px;
 }
+
 .subTitulo div {
   background-color: #c7a432;
   width: 50%;
@@ -233,6 +283,7 @@ header {
   bottom: 23px;
   right: 10px;
 }
+
 .subTitulo p {
   text-transform: uppercase;
   opacity: 90%;
@@ -240,6 +291,7 @@ header {
   bottom: 60px;
   z-index: 3;
 }
+
 .subTitulo img {
   position: relative;
   left: 580px;
@@ -251,6 +303,7 @@ header {
 .subTituloMenu {
   margin-top: 40px;
 }
+
 .subTituloMenu h5 {
   margin-left: 20%;
   font-weight: bolder;
@@ -263,23 +316,28 @@ header {
   flex-direction: column;
   justify-content: center;
 }
+
 .sectionCategorias div div {
   height: 10px;
   width: 100%;
   margin: 10px 0 10px 0;
 }
+
 .sectionCategorias div div ol {
   width: 100%;
   padding: 0 20% 0 20%;
   display: flex;
   justify-content: space-between;
 }
+
 .sectionCategorias div div ol li {
   font-size: 1.5rem;
 }
+
 .sectionCategorias div .subCatDos ol {
   padding: 0 0 0 20%;
 }
+
 .sectionCategorias div .subCatDos ol #textMini {
   margin-right: 19%;
 }
@@ -298,12 +356,14 @@ header {
   border-radius: 5px;
   overflow: hidden;
 }
+
 .categorias a p {
   position: relative;
   z-index: 5;
   color: black;
   font-size: 2rem;
 }
+
 .categorias a img {
   width: 100%;
   height: 100%;
@@ -312,6 +372,7 @@ header {
   background-position-x: 60%;
   transition: all 0.4s;
 }
+
 .categorias a img:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.2);
@@ -321,12 +382,15 @@ header {
   color: black !important;
   text-align: center;
 }
+
 .cardCategorias div div {
   height: 50px;
 }
+
 .cardCategorias div div a button {
   border-radius: 5px 0 0 5px;
 }
+
 .cardCategorias div div button {
   color: black;
   background-color: #e5cfa5;
@@ -336,18 +400,22 @@ header {
   width: 100%;
   height: 100%;
 }
+
 .cardCategorias div div .btnPrimarioCategorias {
   width: 85%;
 }
+
 .cardCategorias div div .btnSecundarioCategorias {
   width: 15%;
 }
+
 .cardCategorias div div ul {
   background-color: #e5cfa5;
   opacity: 90%;
   width: 200px;
   padding: 0;
 }
+
 .cardCategorias div div ul li {
   border-bottom: 1px solid rgb(100, 99, 99);
   height: 40px;
@@ -355,10 +423,12 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 .cardCategorias div div ul li a {
   color: black;
   transition: all 0.4s;
 }
+
 .cardCategorias div div ul li a:hover {
   color: white;
 }
@@ -367,10 +437,12 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .filtrosCategorias h5 {
   margin-left: 20%;
   font-weight: bolder;
 }
+
 .filtrosCategorias a {
   margin-right: 20px;
 }
@@ -385,12 +457,14 @@ header {
   grid-template-rows: 50px 1fr;
   grid-template-areas: "titulo imagen" "texto imagen";
 }
+
 .containerAyuda h3 {
   color: black;
   font-size: 2rem;
   grid-area: titulo;
   text-transform: uppercase;
 }
+
 .containerAyuda p {
   color: black;
   font-size: 1rem;
@@ -399,6 +473,7 @@ header {
   width: 80%;
   margin-top: 3%;
 }
+
 .containerAyuda img {
   grid-area: imagen;
   width: 90%;
@@ -422,12 +497,14 @@ header {
   grid-template-rows: 50px 1fr;
   grid-template-areas: "imagen titulo" "imagen texto";
 }
+
 .containerAyudaDos h3 {
   color: black;
   font-size: 2rem;
   grid-area: titulo;
   text-transform: uppercase;
 }
+
 .containerAyudaDos p {
   color: black;
   width: 80%;
@@ -464,6 +541,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .sectionCarrito div {
   margin-left: 80px;
   background-color: rgb(241, 218, 218);
@@ -474,20 +552,24 @@ header {
   width: 60%;
   padding: 0 10%;
 }
+
 .sectionCarrito div h2 {
   font-size: 2rem;
   font-weight: bolder;
 }
+
 .sectionCarrito div p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: large;
 }
+
 .sectionCarrito div p span {
   font-weight: 100;
   color: #3b3a3a;
 }
+
 .sectionCarrito div button {
   margin-bottom: 20px;
   width: 200px;
@@ -497,6 +579,7 @@ header {
   border: none;
   cursor: pointer;
 }
+
 .sectionCarrito div button a {
   width: max-content;
   color: black;
@@ -521,6 +604,7 @@ header {
   height: 400px;
   border-bottom: 1px solid black;
 }
+
 .sectionNosotros div {
   display: flex;
   flex-direction: column;
@@ -531,12 +615,14 @@ header {
   width: 96%;
   padding: 50px;
 }
+
 .sectionNosotros h2 {
   z-index: 10;
   font-style: italic;
   font-size: 3rem;
   font-weight: bolder;
 }
+
 .sectionNosotros p {
   padding-bottom: 2%;
   font-style: italic;
@@ -555,13 +641,16 @@ header {
 .atencionCliente {
   text-align: center;
 }
+
 .atencionCliente h3 {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
+
 .atencionCliente p {
   font-family: "Courier New", Courier, monospace;
 }
+
 .atencionCliente img {
   width: 100px;
   height: 100px;
@@ -574,6 +663,7 @@ header {
   text-align: center;
   margin-left: 5%;
 }
+
 .uneteNosotros img {
   width: 100px;
   height: 100px;
@@ -581,10 +671,12 @@ header {
   border: 4px solid black;
   border-radius: 100px;
 }
+
 .uneteNosotros h3 {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
 }
+
 .uneteNosotros p {
   font-family: "Courier New", Courier, monospace;
 }
@@ -594,12 +686,14 @@ header {
 .contactoUbicacion {
   margin-top: 3%;
 }
+
 .contactoUbicacion div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "titulo img" "gps gps";
   row-gap: 20px;
 }
+
 .contactoUbicacion h3 {
   display: flex;
   justify-content: flex-end;
@@ -607,10 +701,12 @@ header {
   grid-area: titulo;
   font-size: 2rem;
 }
+
 .contactoUbicacion img {
   grid-area: img;
   width: 100px;
 }
+
 .contactoUbicacion iframe {
   grid-area: gps;
   width: 100%;
@@ -647,12 +743,14 @@ header {
   margin-left: 4px;
   text-align: justify;
 }
+
 .dos h3 {
   text-transform: uppercase;
   margin-bottom: 80px;
   font-size: 1.5rem;
   text-align: center;
 }
+
 .dos p {
   text-align: center;
 }
@@ -667,10 +765,12 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
 .btnContacto button {
   border: none;
   margin-right: 30px;
 }
+
 .btnContacto input {
   background-color: black;
   border: none;
@@ -680,6 +780,7 @@ header {
   height: 40px;
   cursor: pointer;
 }
+
 .btnContacto input:hover {
   background-color: #383434;
 }
@@ -690,10 +791,12 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .comentarios div {
   width: 100%;
   padding: 0 15%;
 }
+
 .comentarios div div {
   width: 100%;
   height: 270px;
@@ -702,13 +805,16 @@ header {
   padding: 30px;
   box-shadow: 5px 5px 2px;
 }
+
 .comentarios div div h6 {
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 .comentarios div div p {
   height: 80%;
 }
+
 .comentarios div div div {
   height: 0;
   width: 100%;
@@ -717,11 +823,13 @@ header {
   padding: 0;
   box-shadow: none;
 }
+
 .comentarios div div div img {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
 }
+
 .comentarios div img {
   position: relative;
   z-index: 3;
@@ -750,6 +858,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .continuarGoogle a {
   display: flex;
   width: 400px;
@@ -762,10 +871,12 @@ header {
   color: black;
   transition: 0.7s;
 }
+
 .continuarGoogle a:hover {
   background-color: rgb(221, 241, 248);
   border: 2px solid rgb(188, 227, 240);
 }
+
 .continuarGoogle img {
   width: 25px;
   height: 25px;
@@ -779,6 +890,7 @@ header {
   align-items: center;
   margin-top: 10px;
 }
+
 .camposRegistro p {
   width: fit-content;
   font-size: 1rem;
@@ -787,15 +899,18 @@ header {
   color: rgb(31, 31, 230);
   cursor: pointer;
 }
+
 .camposRegistro ul {
   display: grid;
   row-gap: 5px;
 }
+
 .camposRegistro div {
   display: flex;
   justify-content: flex-start;
   width: 100%;
 }
+
 .camposRegistro div p {
   width: fit-content;
   margin-left: 7%;
@@ -803,6 +918,7 @@ header {
   color: rgb(43, 41, 41);
   cursor: auto;
 }
+
 .camposRegistro button {
   width: 400px;
   height: 50px;
@@ -814,6 +930,7 @@ header {
   margin-top: 10px;
   cursor: pointer;
 }
+
 .camposRegistro button:active {
   border: 2px solid black;
 }
@@ -825,15 +942,18 @@ header {
   border: 1px solid rgb(139, 138, 138);
   margin-right: 30px;
 }
+
 .camposRellenar input:focus {
   border: 5px groove rgb(114, 203, 209);
 }
+
 .camposRellenar textarea {
   width: 400px;
   height: 100px;
   padding: 10px;
   border: 1px solid rgb(139, 138, 138);
 }
+
 .camposRellenar textarea:focus {
   border: 5px groove rgb(114, 203, 209);
 }
@@ -844,6 +964,7 @@ header {
   width: 100%;
   font-size: 14px;
 }
+
 .checkboxRegistro label {
   position: relative;
   margin-left: 5px;
@@ -857,6 +978,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .registroIngresar button {
   width: 400px;
   height: 50px;
@@ -876,6 +998,7 @@ header {
   align-items: center;
   margin-top: 20px;
 }
+
 .registroInfo div {
   border: 1px solid gray;
   background-color: rgb(239, 235, 235);
@@ -883,18 +1006,21 @@ header {
   padding: 20px;
   border-radius: 4px;
 }
+
 .registroInfo h6 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bolder;
   color: green;
 }
+
 .registroInfo ul {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
   font-size: 12px;
   color: #696969;
 }
+
 .registroInfo img {
   width: 20px;
   height: 20px;
@@ -909,6 +1035,7 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .separador span {
   background-color: rgb(139, 138, 138);
   position: relative;
@@ -918,6 +1045,7 @@ header {
   top: 10px;
   right: 97px;
 }
+
 .separador p {
   z-index: 2;
   position: relative;
@@ -944,6 +1072,7 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .separadorIngresar span {
   background-color: rgb(139, 138, 138);
   position: relative;
@@ -953,6 +1082,7 @@ header {
   top: 10px;
   right: 24px;
 }
+
 .separadorIngresar p {
   z-index: 2;
   position: relative;
@@ -971,6 +1101,7 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .separadorIngresarDos span {
   background-color: rgb(139, 138, 138);
   position: relative;
@@ -980,6 +1111,7 @@ header {
   top: 10px;
   right: 100px;
 }
+
 .separadorIngresarDos p {
   z-index: 2;
   position: relative;
@@ -1001,6 +1133,7 @@ header {
   margin-left: 25%;
   border: 1px solid #e5cfa5;
 }
+
 .containerPromos div a img {
   height: 300px;
   background-position: center center;
@@ -1009,13 +1142,14 @@ header {
 }
 
 .containerProductos div {
-  height: 400px;
+  height: 420px;
   padding: 5px;
   background-color: rgb(244, 230, 230);
   text-align: center;
   border: none;
   box-shadow: 0px 0px 6px 0px rgba(170, 164, 164, 0.75);
 }
+
 .containerProductos div img {
   height: 60%;
   width: 95%;
@@ -1025,13 +1159,14 @@ header {
   background-size: cover;
   border-radius: 10px;
 }
+
 .containerProductos div div {
   border: none;
   box-shadow: none;
 }
 
 .textoCards {
-  height: 40%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1039,16 +1174,19 @@ header {
   background-color: #e5cfa5;
   opacity: 80%;
 }
+
 .textoCards h3 {
   opacity: 100%;
   font-size: 3rem;
   color: black;
 }
+
 .textoCards h4 {
   font-size: 1.5rem;
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .textoCards p {
   color: black;
   opacity: 95%;
@@ -1056,11 +1194,13 @@ header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: lowercase;
 }
+
 .textoCards p span {
   color: red;
   text-decoration: line-through;
   opacity: 75%;
 }
+
 .textoCards button {
   background-color: #e5cfa5;
   border: none;
@@ -1070,9 +1210,24 @@ header {
   font-size: 14px;
   width: 50%;
 }
+
 .textoCards button:hover {
   background-color: rgb(255, 221, 163);
 }
+
+.containerProductos div div button {
+  background-color: #e5cfa5;
+  border: none;
+  color: black;
+  transition: all 0.4s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  width: 50%;
+}
+.containerProductos div div button:hover{
+  background-color: rgb(255, 221, 163);
+}
+
 .textoCards div {
   width: 100%;
   height: 45%;
@@ -1097,29 +1252,36 @@ header {
     height: 100%;
     padding: 0;
   }
+
   .containerEncabezado {
     margin-left: 0;
   }
+
   .desplegable {
     width: 100%;
   }
 }
+
 @media (max-width: 991px) {
   .containerBuscador {
     width: 100%;
   }
 }
+
 /* ************************************ */
 /* MEDIA QUERIES AYUDA HTML */
 @media (min-width: 320px) and (max-width: 768px) {
+
   /* MAIN AYUDA */
   .centroAyuda {
     height: 100%;
   }
+
   /* Section "Como comprar" */
   .imgComoComprar {
     display: none;
   }
+
   .containerAyuda {
     display: block;
     background-image: url(../img/comoComprar.jpg);
@@ -1128,6 +1290,7 @@ header {
     background-size: cover;
     border: 1px solid black;
   }
+
   .parrafoAyuda {
     background-color: rgb(204, 194, 194);
     opacity: 82%;
@@ -1137,10 +1300,12 @@ header {
     margin-left: 2%;
     margin-bottom: 2%;
   }
+
   /* Section "Metodos de Pago" */
   .imagenAyuda {
     display: none;
   }
+
   .containerAyudaDos {
     display: block;
     background-image: url(../img/pagoTarjeta.jpg);
@@ -1151,6 +1316,7 @@ header {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .parrafoAyudaDos {
     background-color: rgb(204, 194, 194);
     opacity: 82%;
@@ -1160,15 +1326,18 @@ header {
     margin-left: 2%;
     margin-bottom: 2%;
   }
+
   /* Section "Metodos de Envio" */
   #metEnvios {
     background-image: url(../img/envios.jpg);
   }
+
   /* Section "Devoluciones" */
   #devoluciones {
     background-image: url(../img/devoluciones.jpg);
   }
 }
+
 /* MEDIAS QUERIES CARRITO HTML */
 @media (min-width: 320px) and (max-width: 425px) {
   .sectionCarrito div {
@@ -1176,45 +1345,56 @@ header {
     margin: 0;
     padding: 3%;
   }
+
   .sectionCarrito div h2 {
     font-size: 1.2rem;
     width: 100%;
   }
+
   .sectionCarrito div p {
     font-size: 12px;
   }
+
   .sectionCarrito div button {
     width: 100%;
   }
+
   .sectionCarrito div button a {
     font-size: small;
   }
 }
+
 @media (min-width: 426px) and (max-width: 768px) {
   .sectionCarrito div {
     align-items: center;
     margin: 0;
     padding: 3%;
   }
+
   .sectionCarrito div h2 {
     font-size: 1.1rem;
     width: 100%;
   }
+
   .sectionCarrito div p {
     font-size: 0.9rem;
     width: 100%;
   }
+
   .sectionCarrito div button {
     width: 50%;
     margin-right: 55%;
     height: auto;
   }
+
   .sectionCarrito div button a {
     font-size: small;
   }
 }
+
 /* MEDIAS QUERIES REGISTRO HTML */
 @media (min-width: 320px) and (max-width: 768px) {
+
   /* Section Registro */
   /* Primer Separador */
   .separador {
@@ -1226,171 +1406,213 @@ header {
     margin-bottom: 0;
     margin-top: 30px;
   }
+
   .separador span {
     display: none;
   }
+
   .separador p {
     left: 0;
   }
+
   .camposRegistro {
     width: 100%;
   }
+
   .camposRegistro p {
     margin-right: 40%;
     margin-top: 15px;
     right: 0;
     font-size: 12px;
   }
+
   .camposRegistro button {
     width: 90%;
   }
 }
+
 /* MEDIA QUERIES INGRESAR HTML */
 @media (min-width: 320px) and (max-width: 768px) {
+
   /* Section "Ingresar" */
   .camposRegistro ul {
     width: 100%;
   }
+
   .camposRegistro a {
     margin-top: 25px;
     margin-right: 5%;
   }
+
   .btnIngresar {
     width: 90%;
   }
+
   .btnIngresar button {
     width: 100%;
     margin-left: 1%;
   }
+
   /* Separador Uno*/
   .separadorIngresar {
     width: 95%;
     margin-left: 3%;
   }
+
   .separadorIngresar p {
     position: relative;
     left: 45%;
   }
+
   .separadorIngresar span {
     width: 100%;
   }
+
   /*  Registro con Google */
   .continuarGoogle {
     width: 90%;
   }
+
   .continuarGoogle a {
     width: 100%;
     margin-left: 6%;
     margin-right: 5%;
   }
+
   /* Link a Registrarse */
   .registroIngresar {
     width: 100%;
   }
+
   .registroIngresar a {
     width: 90%;
   }
+
   .registroIngresar button {
     width: 100%;
   }
+
   /* Container Información */
   .registroInfo div {
     width: 80%;
   }
 }
+
 /*/* ******************************************* */
 /* MEDIA QUERIES CONTACTO HTML */
 @media (min-width: 320px) and (max-width: 810px) {
+
   /* Titulo */
   .sectionTitulo h1 {
     font-size: 3rem;
   }
+
   .sectionTitulo div {
     width: 60%;
   }
+
   /* Section "Sobre Nosotros" */
   .sectionNosotros {
     height: 20%;
     padding: 2%;
   }
+
   .sectionNosotros h2 {
     font-size: 2rem;
   }
+
   .sectionNosotros p {
     font-size: 2vh;
     margin-top: 2vh;
   }
+
   /* Section "Atención al cliente" */
   .sectionAtencionCliente {
     flex-direction: column;
     padding: 5%;
   }
+
   .uneteNosotros {
     margin-right: 3%;
   }
+
   /* Section "Dejanos un Comentario" */
   .sectionComentarios {
     margin-top: 90px;
     flex-direction: column;
     align-items: center;
   }
+
   .mensajeComentarios {
     height: 200px;
     width: 90%;
     margin-right: 0;
   }
+
   .dos {
     height: 90%;
     width: 90%;
     margin-left: 5%;
     padding: 0 3% 0 3%;
   }
+
   .dos h3 {
     margin-top: 5%;
     font-size: 1.2rem;
     font-weight: bold;
   }
+
   .dos p {
     margin-bottom: 10%;
   }
+
   /* Formularios  */
   .formularioComentarios {
     margin-top: 20px;
     width: 90%;
     margin-left: 0;
   }
+
   .camposRellenar {
     margin-right: 5%;
   }
+
   .camposRellenar input {
     width: 100%;
     height: 100%;
   }
+
   .camposRellenar textarea {
     width: 100%;
     margin-top: 10px;
   }
+
   #formMensaje {
     margin-top: 15px;
   }
+
   .btnContacto {
     justify-content: flex-end;
   }
+
   /* Section "Donde estamos?" */
   .contactoUbicacion {
     margin-top: 100px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 400px) {
   .dos h3 {
     margin-top: 20%;
     font-size: 1rem;
     font-weight: bold;
   }
+
   .dos p {
     margin-bottom: 20%;
   }
 }
+
 @media (min-width: 1200px) {
   .containerProductos {
     display: grid;
@@ -1398,196 +1620,248 @@ header {
     column-gap: 10px;
     margin-bottom: 10px;
   }
+
   .containerProductos div {
     width: 100%;
   }
+
   .containerProductos .textoCards {
     height: 40%;
   }
 }
+
 @media (min-width: 1200px) {
   .containerProductos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     grid-template-areas: "vacio uno dos tres cuatro";
   }
+
   .containerProductos .cartaUno {
     grid-area: uno;
   }
+
   .containerProductos .cartaDos {
     grid-area: dos;
   }
+
   .containerProductos .cartaTres {
     grid-area: tres;
   }
+
   .containerProductos .cartaCuatro {
     grid-area: cuatro;
   }
+
   .containerProductos div {
     width: 100%;
   }
+
   .cardCategorias {
-    height: 340px !important;
+    height: 450px !important;
     padding-top: 20px !important;
   }
+
   .cardCategorias div h4 {
     margin-right: 20px;
   }
+
   .cardCategorias div div {
     height: 50px;
   }
+
 }
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .containerProductos .textoCards h4 {
     font-size: 1.2rem;
   }
 }
+
 @media (min-width: 1401px) and (max-width: 1700px) {
   .containerProductos .textoCards h4 {
     font-size: 1.5rem;
   }
+
   .containerProductos .textoCards p {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 1199px) {
   .containerPromos {
     width: 100%;
     margin-left: 0;
   }
+
   .containerPromos div a img {
     height: 400px;
   }
+
   .slide {
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .cardCategorias {
     width: 100%;
   }
+
   .cardCategorias div div {
     width: 30%;
   }
+
   .cardCategorias div div button {
     font-size: 0.9rem;
   }
+
   .containerProductos div {
     height: auto;
   }
+
   .containerProductos div img {
     height: 80%;
   }
+
   .textoCards h4 {
     font-size: 2rem;
   }
+
   .textoCards p {
     font-size: 1rem;
   }
+
   .filtrosCategorias {
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;
   }
+
   .filtrosCategorias h5 {
     display: none;
   }
+
   .filtrosCategorias a {
     font-size: 0.8rem;
   }
+
   .cartaTres {
     display: none;
   }
+
   .cartaCuatro {
     display: none;
   }
 }
+
 @media (max-width: 425px) {
   .containerPromos div a img {
     height: 250px;
   }
+
   .textoCards h3 {
     font-size: 1.9rem;
   }
 }
+
 @media (min-width: 426px) and (max-width: 500px) {
   .textoCards h3 {
     font-size: 2.1rem;
   }
 }
+
 @media (min-width: 320px) and (max-width: 500px) {
   .textoCards h3 {
     font-size: 1.3rem;
     font-weight: bold;
   }
+
   .textoCards h4 {
     font-size: 2rem;
   }
+
   .textoCards p {
     font-size: 0.9rem;
     opacity: 100%;
   }
+
   .textoCards p span {
     opacity: 100%;
   }
+
   .cardCategorias {
     width: 100%;
   }
+
   .cardCategorias div div {
     width: 30%;
   }
+
   .cardCategorias div div button {
     font-size: 0.7rem;
   }
 }
+
 @media (min-width: 501px) and (max-width: 600px) {
   .textoCards h3 {
     font-size: 2.4rem;
   }
 }
+
 @media (min-width: 320px) and (max-width: 1200px) {
   .subTitulo {
     width: 100%;
     margin-left: 0;
   }
+
   .subTitulo h2 {
     text-align: center;
     font-weight: bold;
     top: 20px;
     margin-bottom: 20px;
   }
+
   .subTitulo h2 span {
     top: 0;
   }
+
   .subTitulo div {
     display: none;
   }
+
   .subTitulo img {
     display: none;
   }
+
   .subTitulo p {
     text-align: center;
     bottom: 0;
     top: 25px;
   }
+
   .subTituloMenu {
     text-align: center;
   }
+
   .subTituloMenu h5 {
     font-size: 1.5rem;
     margin: 0;
   }
 }
+
 @media (min-width: 320px) and (max-width: 425px) {
   .subTitulo h2 {
     font-size: 0.6rem;
   }
 }
+
 @media (min-width: 360px) and (max-width: 470px) {
   .subTitulo h2 {
     font-size: 0.8rem;
   }
+
   .subTitulo div {
     width: 60%;
     height: 12px;
@@ -1596,41 +1870,51 @@ header {
     left: 30px;
   }
 }
+
 @media (min-width: 471px) and (max-width: 768px) {
   .subTitulo {
     margin-left: 0;
   }
+
   .subTitulo h2 {
     font-size: 1.3rem;
   }
+
   .subTitulo div {
     height: 20px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .subTitulo h2 span {
     padding: 10px;
   }
+
   .subTitulo p {
     font-size: 0.7rem;
   }
 }
+
 @media (min-width: 320px) and (max-width: 425px) {
   .sectionCategorias {
     margin-top: 50px;
   }
+
   .sectionCategorias div {
     width: 100%;
     margin: 0;
     padding: 0 10px;
   }
+
   .sectionCategorias div div {
     display: none;
   }
+
   .sectionCategorias div ul {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
+
   .sectionCategorias div ul li a p {
     width: 50%;
     position: relative;
@@ -1643,28 +1927,35 @@ header {
     opacity: 80%;
     text-align: center;
   }
+
   .comentarios {
     grid-template-columns: 1fr;
   }
+
   .comentarios #comDos {
     display: none;
   }
+
   .comentarios #comTres {
     display: none;
   }
 }
+
 @media (min-width: 426px) and (max-width: 768px) {
   .sectionCategorias {
     margin-top: 40px;
   }
+
   .sectionCategorias div {
     width: 100%;
     margin: 0;
     padding: 10px;
   }
+
   .sectionCategorias div div {
     display: none;
   }
+
   .sectionCategorias div ul li a p {
     max-width: fit-content;
     position: relative;
@@ -1677,67 +1968,84 @@ header {
     opacity: 80%;
     text-align: center;
   }
+
   .comentarios {
     grid-template-columns: 1fr;
   }
+
   .comentarios div {
     padding: 0 15% 0 20%;
   }
+
   .comentarios div div {
     width: 90%;
     height: 250px;
   }
+
   .comentarios div img {
     width: 80px;
     height: 80px;
   }
+
   .comentarios #comDos {
     display: none;
   }
+
   .comentarios #comTres {
     display: none;
   }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .containerProductos div {
     margin-bottom: 5px;
   }
+
   .containerProductos div img {
     width: 80%;
     margin-left: 10%;
   }
+
   .containerProductos div div h4 {
     font-size: 1.5rem;
   }
 }
+
 @media (min-width: 426px) and (max-width: 550px) {
   .sectionCategorias div ul li a p {
     max-width: min-content;
     margin-left: 20%;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1199px) {
   .sectionCategorias {
     margin-top: 40px;
   }
+
   .comentarios div div h6 {
     font-size: 1.2rem;
   }
+
   .comentarios div div p {
     font-size: 0.8rem;
   }
+
   .comentarios div div div img {
     display: none;
   }
+
   .comentarios div img {
     height: 80px;
     width: 80px;
   }
 }
+
 @media (min-width: 380px) and (max-width: 768px) {
   .cardCategorias div div .btnPrimarioCategorias {
     width: 70%;
   }
+
   .cardCategorias div div .btnSecundarioCategorias {
     width: 30%;
   }

@@ -146,7 +146,7 @@ const validarYRegistrar = (nuevoUsuario) => {
         Swal.fire({
             icon: "error",
             title: "Error!",
-            text: "Error el usuario ya existe!",
+            text: "La dirección de correo electrónico ya está registrada en nuestro sitio web.",
         });
     }
 };

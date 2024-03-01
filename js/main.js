@@ -2,7 +2,14 @@
 import { comprarProductos } from "./cart.js";
 
 
+//////Pruebbaaa
+const prueba = document.getElementById("prueba");
 
+const pruebaDos = document.getElementById("prueba__dos");
+// prueba.classList.add("nuevaClase");
+
+// // Quitar una clase del elemento
+// prueba.classList.remove("containerGoogle");
 
 //Traemos el div para la card de productos
 const divProductos = document.getElementById("productos");
@@ -45,11 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
         a.innerHTML = `Ingresar`;
         userLogin.append(a);
     } else {
+        prueba.classList.add("nuevaClase");
+        pruebaDos.classList.add("nuevaClaseDos");
+        // Quitar una clase del elemento
+        prueba.classList.remove("containerGoogle");
+        pruebaDos.classList.remove("separadorHeader");
+
 
         //En caso contrario aparece nombre de usuario
         //Y creamos boton para cierre de sesión
         const p = document.createElement("p");
         const close = document.createElement("button");
+        close.classList.add("btnCerrar");
+        p.classList.add("userName");
         p.innerHTML = `${usuarioLogueado.user}`;
         close.id = "cerrar__session";
         close.innerHTML = `Cerrar sesión`;
@@ -79,13 +94,12 @@ export const generarCardsProductos = (productos) => {
 
         //Creamos el formato de la carta
         let card = document.createElement("div");
-
-        card.className = "producto";
+        card.className = "card col-xl-4 col-md-6 col-sm-12 cardCategorias";
         card.innerHTML = `
-         <div class="card" style="width: 18rem;">
+         <div class="card col-xl-2 col-md-6 col-sm-12 ">
          <img src="${img}" class="card-img-top" alt="${alt}">
-         <div class="card-body">
-          <h5 class="card-title">${nombre}</h5>
+         <div class="card-body textoCards">
+          <h4 class="card-title">${nombre}</h4>
          <p class="card-text"> ${categorias} </p>
          <p class="card-text">$${precio} </p>
          <button id="btnComprar${id}" class="btn btn-primary">Comprar</button>

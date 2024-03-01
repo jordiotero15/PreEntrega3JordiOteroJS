@@ -47,10 +47,44 @@
                         <li class="nav-item active" title="Tienda">
                             <a class="nav-link" aria-current="page" href="#">Tienda</a>
                         </li>
-
-                        <li class="nav-item" title="Promociones">
-                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        <li class="nav-item dropdown " title="Categorias">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul id="filter__lista" class="dropdown-menu">
+                                <li><a href="#" title="Bizcochos Dulces">Bizcochos dulces</a></li>
+                                <li><a href="#" title="Bizcochos Salados">Bizcochos salados</a></li>
+                                <li><a href="#" title="Panes">Panes</a></li>
+                                <li title="Galleteria"><a href="#">Galleteria</a></li>
+                                <li class="border-bottom-0" title="Galleteria"><a href="#">Todos</a></li>
+                            </ul>
                         </li>
+                        <!-- <ul class="dropdown-menu">
+                                <li class="btn-group dropend">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Bizcochos
+                                    </button>
+                                    <ul id="filter__lista" class="dropdown-menu">
+                                        <li><a href="#" title="Bizcochos Dulces">Bizcochos dulces</a></li>
+                                        <li><a href="#" title="Bizcochos Salados">Bizcochos salados</a></li>
+                                        <li><a href="#" title="Panes">Panes</a></li>
+                                        <li title="Galleteria"><a href="#">Galleteria</a></li>
+                                        <li class="border-bottom-0" title="Galleteria"><a href="#">Todos</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        <!-- <ul id="filter__lista" class="dropdown-menu">
+                                <li><a href="#" title="Bizcochos Dulces">Bizcochos dulces</a></li>
+                                <li><a href="#" title="Bizcochos Salados">Bizcochos salados</a></li>
+                                <li><a href="#" title="Panes">Panes</a></li>
+                                <li title="Galleteria"><a href="#">Galleteria</a></li>
+                                <li class="border-bottom-0" title="Galleteria"><a href="#">Todos</a></li>
+                            </ul> -->
+
+
+
                         <li class="nav-item" title="Contacto">
                             <a class="nav-link" href="contactos.html">Contacto</a>
                         </li>
@@ -71,10 +105,10 @@
                             <ul class="dropdown-menu desplegable">
                                 <li id="userLogin" class="dropdown-item ingresar" title="Ingresar">
                                 </li>
-                                <li class="separadorHeader text-secondary">
+                                <li id="prueba__dos" class="separadorHeader text-secondary">
                                     o
                                 </li>
-                                <li class="containerGoogle text-secondary" title="Continuar con Google">
+                                <li id="prueba" class="containerGoogle text-secondary" title="Continuar con Google">
                                     <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2Fgsi%2Fselect%3Fclient_id%3D575783686381-0tl98vq12r95o4rcr39foo2qtb9qdgfp.apps.googleusercontent.com%26ux_mode%3Dpopup%26ui_mode%3Dcard%26as%3DUx605J9Fal5UgDwy7x3dUA%26channel_id%3Dd544a0b3b38e9550eff20280c6fc4b4ce2d6314a7eed47c3ad99598d71956403%26origin%3Dhttps%3A%2F%2Ftiendamia.com&faa=1&ifkv=AYZoVhcUEpzfhlSRX2Rj8_m7A38KyBnAqYr5Cd_HHLo5p63-sFr193kiSOS79JnR7GP8RuTFiMnp&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-385565411%3A1697001458043094&theme=glif"
                                         target="_blank"><img src="../img/gGoogle.jpg" alt="Google">Continuar con
                                         Google</a>
@@ -89,12 +123,29 @@
                             <a id="btnCarrito" class="nav-link text-secondary" href="#"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
                             <p id="contador__carrito"></p>
+                            <div id="carrito" class="carrito">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Unidades</th>
+                                            <th>Costo Unitario</th>
+                                            <th>Costo Total</th>
+                                            <th>Agregar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="items"></tbody>
+                                    <tfoot id="totales"></tfoot>
+                                </table>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
 
         <!-- Section "Titulo" -->
@@ -111,7 +162,7 @@
         </section>
         <!-- SECTION "FILTROS" -->
         <section class="filtrosCategorias">
-            <h5>Bizcochos - Dulces</h5>
+            <h5>Todos los productos</h5>
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ordenar por
             </a>
@@ -238,22 +289,6 @@
         <section class="container-fluid">
             <div id="productos" class="row containerProductos"></div>
         </section>
-        <div id="carrito" class="carrito">
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th>Unidades</th>
-                        <th>Costo Unitario</th>
-                        <th>Costo Total</th>
-                        <th>Agregar</th>
-                    </tr>
-                </thead>
-                <tbody id="items"></tbody>
-                <tfoot id="totales"></tfoot>
-            </table>
-        </div>
     </main>
     <footer class="bg-dark pt-5 pb-1 container-fluid">
         <div class="text-secondary text-center text-md-start">
@@ -318,7 +353,6 @@
                 <i class="fa-brands fa-whatsapp fa-2xl whats" title="WhatsApp"></i></a>
         </section>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
