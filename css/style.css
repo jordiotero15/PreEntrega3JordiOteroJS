@@ -447,6 +447,26 @@ header {
   margin-right: 20px;
 }
 
+.categoriasTienda {
+  display: flex;
+}
+
+.categoriasTienda h4 {
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.categoriasTienda div {
+  width: 140px;
+  margin-right: 5px;
+}
+.categoriasTienda div button {
+  width: 100%;
+}
+.categoriasTienda ul li{
+  
+}
+
 /* -------------------------------------- */
 /* --------------------------------------------------------- */
 /* ------- AYUDA HTML -----------*/
