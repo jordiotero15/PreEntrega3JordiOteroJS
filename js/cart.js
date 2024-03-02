@@ -1,13 +1,13 @@
 import { productosDisponibles } from "./main.js";
 
-//si carrito no existe(null) ... por ende se crea una sessionStorage de carrito
+//Traemos los elementos del carrito.. si carrito no existe(null) ... por ende se crea una sessionStorage de carrito
 JSON.parse(sessionStorage.getItem("carrito")) === null && sessionStorage.setItem("carrito", JSON.stringify([]));
 
-//Creamos evento en el DOM (igual que en el main donde mostramos los productos)
-document.addEventListener("DOMContentLoaded", () => {
-    dibujarCarrito();
-});
-
+// //Creamos evento en el DOM
+// document.addEventListener("DOMContentLoaded", () => {
+//     dibujarCarrito();
+// });
+//Definimos una variable para alojar los datos del carrito
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
 
 //////////////////
@@ -28,6 +28,12 @@ btnCarrito.addEventListener("click", () => {
         carritoTable.style.display = "block"
     }
 });
+
+//Creamos evento en el DOM
+document.addEventListener("DOMContentLoaded", () => {
+    dibujarCarrito();
+});
+
 
 ///////////////////////
 // Declaramos variable para comprar productos
@@ -88,7 +94,7 @@ export const comprarProductos = (idProducto) => {
 };
 
 ///////////////////////////////////////////
-//Llamamos a la funcion de Dibujar el carrito
+//Declaramos funcion para completar la estructura del carrito
 const dibujarCarrito = () => {
     //limpiamos el carrito al poner objetos nuevos
     listaCarrito.innerHTML = ``;
@@ -96,15 +102,14 @@ const dibujarCarrito = () => {
         //Desestructuracion
         const { img, nombre, cantidad, precio, id } = productos;
         let body = document.createElement("tr");
-
-        body.className = "productos_carrito";
+        body.className = "productosCarro";
         body.innerHTML = `
-      <th><img id="fotoProductoCarrito" class="card-img-top" src="${img}" class="card-img-top"></th>
+      <th class="imgCarro"><img id="fotoProductoCarrito" class="card-img-top" src="${img}" class="card-img-top"></th>
       <td>${nombre}</td>
       <td>${cantidad}</td>
-      <td>${precio / cantidad}</td>
-      <td>${precio}</td>
-      <td><button id="+${id}" class="btn btn-succes">+</button>
+      <td>$${precio / cantidad}</td>
+      <td>$${precio}</td>
+      <td><button id="+${id}" class="btn btn-success">+</button>
           <button id="-${id}" class="btn btn-danger">-</button>
       </td>
       `;
@@ -135,12 +140,12 @@ const dibujarFooter = () => {
       <td></td>
       <td>${generarTotales().cantidadTotal}</td>
       <td></td>
-      <td>${generarTotales().costoTotal}</td>
+      <td>$${generarTotales().costoTotal}</td>
       `;
         //Lo mostramos
         footCarrito.append(footer);
     } else {
-        footCarrito.innerHTML = `<h3>No hay productos en carrito<h/3>`;
+        footCarrito.innerHTML = `<h3>No hay productos en el carrito<h/3>`;
     }
 
 }
@@ -158,7 +163,7 @@ const generarTotales = () => {
 };
 
 ////////////////////////////////////////
-//Hacemos funcionar a los botos del + y - del carrito
+//Hacemos funcionar los botos del + y - del carrito
 const aumentarCantidad = (id) => {
     //buscamos primero en el indice donde esta ese producto
     const indexProductoCarrito = carrito.findIndex((producto) => producto.id === id);

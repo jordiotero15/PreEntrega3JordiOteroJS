@@ -1,18 +1,386 @@
 [
-    { "id": 1, "nombre": "Margaritas", "categorias": "Bizcochos dulces", "precio": 490, "img": "../img/tienda/bizcochosMargarita.jpeg", "alt": "Bizcochos Dulces Margarita" },
-    { "id": 2, "nombre": "Croissant dulce", "categorias": "Bizcochos dulces", "precio": 490, "img": "../img/tienda/croissant.jpg", "alt": "Bizcochos Dulces Croissant" },
-    { "id": 3, "nombre": "Croissant de chocolate", "categorias": "Bizcochos dulces", "precio": 490, "img": "../img/tienda/croissantDulces.jpg", "alt": "Bizchochos Dulces Croissant Relleno de Chocolate" },
-    { "id": 4, "nombre": "Palmitas", "categorias": "Bizcochos dulces", "precio": 490, "img": "../img/tienda/palmitas.jpg", "alt": "Palmitas dulces" },
-    { "id": 5, "nombre": "Croissant Salado", "categorias": "Bizcochos salados", "precio": 490, "img": "../img/tienda/croissantSalado.jpg", "alt": "Bizcocho Croissant salado" },
-    { "id": 6, "nombre": "Croissant de queso", "categorias": "Bizcochos salados", "precio": 490, "img": "../img/tienda/croissantQueso.jpg", "alt": "Bizcochos salados Croissant relleno de queso" },
-    { "id": 7, "nombre": "Pan c/grasa", "categorias": "Bizcochos salados", "precio": 490, "img": "../img/tienda/bizcochoPanConGrasa.jpg", "alt": "Bizcochos pan con grasa" },
-    { "id": 8, "nombre": "Pan c/grasa c/chicharrones", "categorias": "Bizcochos salados", "precio": 490, "img": "../img/tienda/bizcochosPanGrasaChicha.jpg", "alt": "Bizcochos pan con grasa con chicharrones" },
-    { "id": 9, "nombre": "Pan Flauta", "categorias": "Panes", "precio": 58, "img": "../img/tienda/panFlauta.webp", "alt": "Pan Flauta" },
-    { "id": 10,"nombre": "Pan Porteño", "categorias": "Panes", "precio": 263, "img": "../img/tienda/panPorteno.webp", "alt": "Pan Porteño" },
-    { "id": 11,"nombre": "Tortuga Clásica", "categorias": "Panes", "precio": 263, "img": "../img/tienda/panTortuga.webp", "alt": "Tortuga Clásica" },
-    { "id": 12,"nombre": "Tortuga c/sésamo", "categorias": "Panes", "precio": 330, "img": "../img/tienda/panTortugaSesamo.webp", "alt": "Tortuga c/sésamo" },
-    { "id": 13,"nombre": "Galletas de chocolate", "categorias": "Galleteria", "precio": 590, "img": "../img/tienda/galletasChocolate.jpeg", "alt": "Galletas bañadas en chocolate" },
-    { "id": 14,"nombre": "Galletas dulces surtidas", "categorias": "Galleteria", "precio": 590, "img": "../img/tienda/galletasDulcesSurtidas.jpg", "alt": "Galletas dulces surtidas" },
-    { "id": 15,"nombre": "Galletas de Polvoron", "categorias": "Galleteria", "precio": 590, "img": "../img/tienda/galletasPolvoron.jpeg", "alt": "Galletas de Polvoron" },
-    { "id": 16,"nombre": "Galletas de Queso", "categorias": "Galleteria", "precio": 590, "img": "../img/tienda/galletasQueso.png", "alt": "Galletas de Queso" }
+    {
+        "id": 1,
+        "nombre": "Margaritas",
+        "categorias": "Bizcochos dulces",
+        "precio": 490,
+        "img": "../img/tienda/bizcochosMargarita.jpeg",
+        "alt": "Bizcochos Dulces Margarita"
+    },
+    {
+        "id": 2,
+        "nombre": "Croissant dulce",
+        "categorias": "Bizcochos dulces",
+        "precio": 490,
+        "img": "../img/tienda/croissant.jpg",
+        "alt": "Bizcochos Dulces Croissant"
+    },
+    {
+        "id": 3,
+        "nombre": "Croissant de chocolate",
+        "categorias": "Bizcochos dulces",
+        "precio": 490,
+        "img": "../img/tienda/croissantDulces.jpg",
+        "alt": "Bizchochos Dulces Croissant Relleno de Chocolate"
+    },
+    {
+        "id": 4,
+        "nombre": "Palmitas",
+        "categorias": "Bizcochos dulces",
+        "precio": 490,
+        "img": "../img/tienda/palmitas.jpg",
+        "alt": "Palmitas dulces"
+    },
+    {
+        "id": 5,
+        "nombre": "Croissant Salado",
+        "categorias": "Bizcochos salados",
+        "precio": 490,
+        "img": "../img/tienda/croissantSalado.jpg",
+        "alt": "Bizcocho Croissant salado"
+    },
+    {
+        "id": 6,
+        "nombre": "Croissant de queso",
+        "categorias": "Bizcochos salados",
+        "precio": 490,
+        "img": "../img/tienda/croissantQueso.jpg",
+        "alt": "Bizcochos salados Croissant relleno de queso"
+    },
+    {
+        "id": 7,
+        "nombre": "Pan c/grasa",
+        "categorias": "Bizcochos salados",
+        "precio": 490,
+        "img": "../img/tienda/bizcochoPanConGrasa.jpg",
+        "alt": "Bizcochos pan con grasa"
+    },
+    {
+        "id": 8,
+        "nombre": "Pan c/grasa c/chicharrones",
+        "categorias": "Bizcochos salados",
+        "precio": 490,
+        "img": "../img/tienda/bizcochosPanGrasaChicha.jpg",
+        "alt": "Bizcochos pan con grasa con chicharrones"
+    },
+    {
+        "id": 9,
+        "nombre": "Pan Flauta",
+        "categorias": "Panes",
+        "precio": 58,
+        "img": "../img/tienda/panFlauta.webp",
+        "alt": "Pan Flauta"
+    },
+    {
+        "id": 10,
+        "nombre": "Pan Porteño",
+        "categorias": "Panes",
+        "precio": 263,
+        "img": "../img/tienda/panPorteno.webp",
+        "alt": "Pan Porteño"
+    },
+    {
+        "id": 11,
+        "nombre": "Tortuga Clásica",
+        "categorias": "Panes",
+        "precio": 263,
+        "img": "../img/tienda/panTortuga.webp",
+        "alt": "Tortuga Clásica"
+    },
+    {
+        "id": 12,
+        "nombre": "Tortuga c/sésamo",
+        "categorias": "Panes",
+        "precio": 330,
+        "img": "../img/tienda/panTortugaSesamo.webp",
+        "alt": "Tortuga c/sésamo"
+    },
+    {
+        "id": 13,
+        "nombre": "Galletas de chocolate",
+        "categorias": "Galleteria",
+        "precio": 590,
+        "img": "../img/tienda/galletasChocolate.jpeg",
+        "alt": "Galletas bañadas en chocolate"
+    },
+    {
+        "id": 14,
+        "nombre": "Galletas dulces surtidas",
+        "categorias": "Galleteria",
+        "precio": 590,
+        "img": "../img/tienda/galletasDulcesSurtidas.jpg",
+        "alt": "Galletas dulces surtidas"
+    },
+    {
+        "id": 15,
+        "nombre": "Galletas de Polvoron",
+        "categorias": "Galleteria",
+        "precio": 590,
+        "img": "../img/tienda/galletasPolvoron.jpeg",
+        "alt": "Galletas de Polvoron"
+    },
+    {
+        "id": 16,
+        "nombre": "Galletas de Queso",
+        "categorias": "Galleteria",
+        "precio": 590,
+        "img": "../img/tienda/galletasQueso.png",
+        "alt": "Galletas de Queso"
+    },
+    {
+        "id": 17,
+        "nombre": "Masas Finas - 1 kg",
+        "categorias": "Masas",
+        "precio": 990,
+        "img": "../img/tienda/masasFinas.jpeg",
+        "alt": "Masas Finas"
+    },
+    {
+        "id": 18,
+        "nombre": "Masas Secas - 1 kg",
+        "categorias": "Masas",
+        "precio": 990,
+        "img": "../img/tienda/masasSecas.jpg",
+        "alt": "Masas Secas"
+    },
+    {
+        "id": 19,
+        "nombre": "Masas Finas Surtidas - 1 kg",
+        "categorias": "Masas",
+        "precio": 990,
+        "img": "../img/tienda/masasFinasSurtidas.jpeg",
+        "alt": "Masas Finas Surtidas"
+    },
+    {
+        "id": 20,
+        "nombre": "Masas Secas Surtidas - 1 kg",
+        "categorias": "Masas",
+        "precio": 990,
+        "img": "../img/tienda/masasSecasSurtidas.jpg",
+        "alt": "Masas Secas Surtidas"
+    },
+    {
+        "id": 21,
+        "nombre": "Torta Diamantina",
+        "categorias": "Postres",
+        "precio": 1040,
+        "img": "../img/tienda/postreDiamantina.jpg",
+        "alt": "Torta Diamantina"
+    },
+    {
+        "id": 22,
+        "nombre": "Lemon Pie",
+        "categorias": "Postres",
+        "precio": 900,
+        "img": "../img/tienda/postreLemonPie.jpg",
+        "alt": "Lemon Pie"
+    },
+    {
+        "id": 23,
+        "nombre": "Manjar de Chocholate",
+        "categorias": "Postres",
+        "precio": 550,
+        "img": "../img/tienda/postreManjarChocolate.jpg",
+        "alt": "Manjar de Chocolate"
+    },
+    {
+        "id": 24,
+        "nombre": "Torta Alfajor",
+        "categorias": "Postres",
+        "precio": 990,
+        "img": "../img/tienda/postreTortaAlfajor.jpg",
+        "alt": "Torta Alfajor"
+    },
+    {
+        "id": 25,
+        "nombre": "Alfajor de Chocolate - 1 kg",
+        "categorias": "Alfajores y Ojitos",
+        "precio": 890,
+        "img": "../img/tienda/alfajorChocolate.jpeg",
+        "alt": "Alfajor de Chocolate"
+    },
+    {
+        "id": 26,
+        "nombre": "Alfajor de Maicena - 1 kg",
+        "categorias": "Alfajores y Ojitos",
+        "precio": 890,
+        "img": "../img/tienda/alfajorMaicena.jpeg",
+        "alt": "Alfajor de Maicena"
+    },
+    {
+        "id": 27,
+        "nombre": "Alfajor de Coco - 1 kg",
+        "categorias": "Alfajores y Ojitos",
+        "precio": 890,
+        "img": "../img/tienda/alfajorCoco.png",
+        "alt": "Alfajor de Coco"
+    },
+    {
+        "id": 28,
+        "nombre": "Ojitos - 1 kg",
+        "categorias": "Alfajores y Ojitos",
+        "precio": 690,
+        "img": "../img/tienda/ojitos.jpg",
+        "alt": "Ojitos"
+    },
+    {
+        "id": 29,
+        "nombre": "Milanesa al pan",
+        "categorias": "Rotiseria",
+        "precio": 260,
+        "img": "../img/tienda/milanesaAlPan.jpeg",
+        "alt": "Milanesa al pan"
+    },
+    {
+        "id": 30,
+        "nombre": "Milanesa Napolitana",
+        "categorias": "Rotiseria",
+        "precio": 620,
+        "img": "../img/tienda/milanesaNapolitana.jpeg",
+        "alt": "Milanesa Napolitana"
+    },
+    {
+        "id": 31,
+        "nombre": "Pizza c/ Muzza",
+        "categorias": "Rotiseria",
+        "precio": 390,
+        "img": "../img/tienda/pizza.jpg",
+        "alt": "Pizza c/ Muzza"
+    },
+    {
+        "id": 32,
+        "nombre": "Pollo al Spiedo",
+        "categorias": "Rotiseria",
+        "precio": 620,
+        "img": "../img/tienda/pollo.jpeg",
+        "alt": "Pollo al Spiedo"
+    },
+    {
+        "id": 33,
+        "nombre": "Refresco COCA COLA 2.5L",
+        "categorias": "Aguas y Bebidas",
+        "precio": 170,
+        "img": "../img/tienda/cocaOriginal.webp",
+        "alt": "Refresco COCA COLA 2.5L"
+    },
+    {
+        "id": 34,
+        "nombre": "Refresco COCA COLA sin azúcar 1.5L",
+        "categorias": "Aguas y Bebidas",
+        "precio": 130,
+        "img": "../img/tienda/cocaZero.webp",
+        "alt": "Refresco COCA COLA sin azúcar 1.5L"
+    },
+    {
+        "id": 35,
+        "nombre": "Agua SALUS con gas 1.5L",
+        "categorias": "Aguas y Bebidas",
+        "precio": 65,
+        "img": "../img/tienda/aguaCGas.webp",
+        "alt": "Agua SALUS con gas 1.5L"
+    },
+    {
+        "id": 36,
+        "nombre": "Agua SALUS sin gas 1.5L",
+        "categorias": "Aguas y Bebidas",
+        "precio": 65,
+        "img": "../img/tienda/aguaSGas.webp",
+        "alt": "Agua SALUS sin gas 1.5L"
+    },
+    {
+        "id": 37,
+        "nombre": "Leche fresca entera CONAPROLE 1L",
+        "categorias": "Lacteos y Quesos",
+        "precio": 42,
+        "img": "../img/tienda/lecheEntera.webp",
+        "alt": "Leche fresca entera CONAPROLE 1L"
+    },
+    {
+        "id": 38,
+        "nombre": "Leche chocolatada COLET 1L",
+        "categorias": "Lacteos y Quesos",
+        "precio": 110,
+        "img": "../img/tienda/lecheChocolatada.webp",
+        "alt": "Leche chocolatada COLET 1L"
+    },
+    {
+        "id": 39,
+        "nombre": "Queso Muzzarella CALCAR - 1 kg",
+        "categorias": "Lacteos y Quesos",
+        "precio": 515,
+        "img": "../img/tienda/quesoMozzarella.webp",
+        "alt": "Queso Muzzarella CALCAR - 1 kg"
+    },
+    {
+        "id": 40,
+        "nombre": "Queso Superuntable ALPA ALPAZUL 230g",
+        "categorias": "Lacteos y Quesos",
+        "precio": 122,
+        "img": "../img/tienda/quesoAlpa.webp",
+        "alt": "Queso Superuntable ALPA ALPAZUL 230g"
+    },
+    {
+        "id": 41,
+        "nombre": "Caramelos CAVENDISH Fruits Candies 966 g",
+        "categorias": "Golosinas y Chocolates",
+        "precio": 765,
+        "img": "../img/tienda/golosinas.webp",
+        "alt": "Caramelos CAVENDISH Fruits Candies 966 g"
+    },
+    {
+        "id": 42,
+        "nombre": "Chocolate MILKA Oreo 300 g",
+        "categorias": "Golosinas y Chocolates",
+        "precio": 419,
+        "img": "../img/tienda/chocolateMilka.webp",
+        "alt": "Chocolate MILKA Oreo 300 g"
+    },
+    {
+        "id": 43,
+        "nombre": "Bombonera DOÑA JIMENA 150 g",
+        "categorias": "Golosinas y Chocolates",
+        "precio": 660,
+        "img": "../img/tienda/bombonesDonaJimena.webp",
+        "alt": "Bombonera DOÑA JIMENA 150 g"
+    },
+    {
+        "id": 44,
+        "nombre": "Bombones VALDELICE 76 g",
+        "categorias": "Golosinas y Chocolates",
+        "precio": 495,
+        "img": "../img/tienda/bombonesValdelice.webp",
+        "alt": "Bombones VALDELICE 76 g"
+    },
+    {
+        "id": 45,
+        "nombre": "Papas fritas LAY'S 400 g",
+        "categorias": "Snacks",
+        "precio": 285,
+        "img": "../img/tienda/laysClasica.webp",
+        "alt": "Papas fritas LAY'S 400 g"
+    },
+    {
+        "id": 46,
+        "nombre": "Snack DORITOS queso 380 g",
+        "categorias": "Snacks",
+        "precio": 290,
+        "img": "../img/tienda/doritos.webp",
+        "alt": "Snack DORITOS queso 380 g"
+    },
+    {
+        "id": 47,
+        "nombre": "Papas fritas LAY'S Stax cebolla tubo 163 g",
+        "categorias": "Snacks",
+        "precio": 210,
+        "img": "../img/tienda/laysCrema.webp",
+        "alt": "Papas fritas LAY'S Stax cebolla tubo 163 g"
+    },
+    {
+        "id": 48,
+        "nombre": "Papas fritas PRINGLES original 124 g",
+        "categorias": "Snacks",
+        "precio": 239,
+        "img": "../img/tienda/pringles.webp",
+        "alt": "Papas fritas PRINGLES original 124 g"
+    }
 ]

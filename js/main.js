@@ -1,14 +1,12 @@
 //Importamos funciones
 import { comprarProductos } from "./cart.js";
-
+//Variable donde alojaremos los productos disponibles
 export let productosDisponibles;
 
 
-//////Pruebbaaa
-const prueba = document.getElementById("prueba");
-
-const pruebaDos = document.getElementById("prueba__dos");
-
+//////Variables del HTML Header que eliminares a futuro
+const eliminarUno = document.getElementById("eliminar__uno");
+const eliminarDos = document.getElementById("eliminar__dos");
 
 //Traemos el div para la card de productos
 const divProductos = document.getElementById("productos");
@@ -31,8 +29,8 @@ const filterPrecio = document.getElementById("filter__precio");
 //Llamamos al usuario logueado
 let usuarioLogueado = JSON.parse(sessionStorage.getItem("usuario"));
 
-////////////
-//Funciones
+///////////////////////////////////////////
+//FUNCIONES
 
 //1-Modelo de la carta de los productos
 const generarCartaProducto = (producto) => {
@@ -56,7 +54,7 @@ const generarCartaProducto = (producto) => {
 
     return card;
 };
-//2-Generamos función para mostrar el modelo y las cartas de productos
+//2-Generamos una función para mostrar las cartas actualizadas
 const generarCartasProductos = (productos) => {
     // Limpiamos el contenido anterior
     divProductos.innerHTML = "";
@@ -98,14 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
         a.innerHTML = `Ingresar`;
         userLogin.append(a);
     } else {
-        prueba.classList.add("nuevaClase");
-        pruebaDos.classList.add("nuevaClaseDos");
-        // Quitar una clase del elemento
-        prueba.classList.remove("containerGoogle");
-        pruebaDos.classList.remove("separadorHeader");
+        //Generamos en el html unas nuevas listas
+        eliminarUno.classList.add("nuevaClase");
+        eliminarDos.classList.add("nuevaClaseDos");
+        // Quitamos del html las listas deseadas a cambiar
+        eliminarUno.classList.remove("containerGoogle");
+        eliminarDos.classList.remove("separadorHeader");
 
-
-        //En caso contrario aparece nombre de usuario
+        //Al estar logueado nos mostrara el nombre de usuario
         //Y creamos boton para cierre de sesión
         const p = document.createElement("p");
         const close = document.createElement("button");
