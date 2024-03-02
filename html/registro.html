@@ -44,20 +44,14 @@
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item" title="Tienda">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
-                        </li>
-
-                        <li class="nav-item" title="Promociones">
-                            <a class="nav-link" href="promociones.html">Promociones</a>
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
                         </li>
                         <li class="nav-item" title="Contacto">
-                            <a class="nav-link" href="contactos.html">Contacto</a>
+                            <a class="nav-link" href="./contactos.html">Contacto</a>
                         </li>
-
-
                     </ul>
                     <form class="d-flex ms-3 containerBuscador" role="search">
-                        <input class="form-control me-0 rounded-5" type="search" placeholder="Buscar"
+                        <input id="filter__input" class="form-control me-0 rounded-5" type="search" placeholder="Buscar"
                             aria-label="Search" title="Buscar">
                         <button class="btnBuscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
@@ -68,26 +62,26 @@
                                 Mi Cuenta
                             </a>
                             <ul class="dropdown-menu desplegable">
-                                <li id="userLogin" class="dropdown-item ingresar" title="Ingresar"><a
-                                        href="./ingreso.html">Ingresar</a>
+                                <li id="userLogin" class="dropdown-item ingresar" title="Ingresar">
                                 </li>
-                                <li class="separadorHeader text-secondary">
+                                <li id="eliminar__dos" class="separadorHeader text-secondary">
                                     o
                                 </li>
-                                <li class="containerGoogle text-secondary" title="Continuar con Google">
+                                <li id="eliminar__uno" class="containerGoogle text-secondary"
+                                    title="Continuar con Google">
                                     <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2Fgsi%2Fselect%3Fclient_id%3D575783686381-0tl98vq12r95o4rcr39foo2qtb9qdgfp.apps.googleusercontent.com%26ux_mode%3Dpopup%26ui_mode%3Dcard%26as%3DUx605J9Fal5UgDwy7x3dUA%26channel_id%3Dd544a0b3b38e9550eff20280c6fc4b4ce2d6314a7eed47c3ad99598d71956403%26origin%3Dhttps%3A%2F%2Ftiendamia.com&faa=1&ifkv=AYZoVhcUEpzfhlSRX2Rj8_m7A38KyBnAqYr5Cd_HHLo5p63-sFr193kiSOS79JnR7GP8RuTFiMnp&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-385565411%3A1697001458043094&theme=glif"
                                         target="_blank"><img src="../img/gGoogle.jpg" alt="Google">Continuar con
                                         Google</a>
                                 </li>
                             </ul>
-
                         </li>
                         <li class="nav-item " title="Ayuda">
-                            <a class="nav-link" href="ayuda.html">Ayuda</a>
+                            <a class="nav-link" href="./ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item cart" title="Carrito">
-                            <a class="nav-link text-secondary" href="cart.html"><i
+                            <a id="btnCarrito" class="nav-link text-secondary" href="#"><i
                                     class="fa-solid fa-cart-shopping"></i></a>
+                            <p id="contador__carrito"></p>
                         </li>
                     </ul>
 
@@ -96,6 +90,27 @@
         </nav>
     </header>
     <main class="registro">
+        <!-- Section "Carrito" -->
+        <section>
+            <div id="carrito" class="carrito">
+                <h4>Tu Carrito</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Productos</th>
+                            <th>Cantidad</th>
+                            <th>Precio Individual</th>
+                            <th>Precio Acumulado</th>
+                            <th>Agregar/Quitar Productos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot id="totales"></tfoot>
+                </table>
+
+            </div>
+        </section>
         <!-- Section "Titulo" -->
         <section class="sectionTitulo">
             <h1 class="titulo">Regístrate</h1>
@@ -227,12 +242,10 @@
             <p id="btn__login"></p>
         </section>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="../db/productos.js"></script>
     <script type="module" src="../db/usuarios.js"></script>
     <script type="module" src="../js/usuario.js"></script>
     <script type="module" src="../js/main.js"></script>

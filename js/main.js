@@ -1,8 +1,8 @@
 //Importamos funciones
 import { comprarProductos } from "./cart.js";
+
 //Variable donde alojaremos los productos disponibles
 export let productosDisponibles;
-
 
 //////Variables del HTML Header que eliminares a futuro
 const eliminarUno = document.getElementById("eliminar__uno");

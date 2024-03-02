@@ -16,6 +16,7 @@ const listaCarrito = document.getElementById("items");
 const footCarrito = document.getElementById("totales");
 const carritoTable = document.getElementById("carrito");
 
+
 //////////////////
 //Llamamos al btn del carrito y le asignamos un evento
 const btnCarrito = document.getElementById("btnCarrito");
@@ -28,12 +29,6 @@ btnCarrito.addEventListener("click", () => {
         carritoTable.style.display = "block"
     }
 });
-
-//Creamos evento en el DOM
-document.addEventListener("DOMContentLoaded", () => {
-    dibujarCarrito();
-});
-
 
 ///////////////////////
 // Declaramos variable para comprar productos
@@ -85,7 +80,7 @@ export const comprarProductos = (idProducto) => {
         denyButtonText: `Cancelar`
     }).then((result) => {
         if (result.isConfirmed) {
-            Swal.fire(`Usted compró con exito ${nombre}`, "", "success");
+            Swal.fire(`Usted añadió con exito al carrito ${nombre}`, "", "success");
         } else if (result.isDenied) {
             Swal.fire("Operación cancelada.", "", "info");
         }
@@ -109,8 +104,8 @@ const dibujarCarrito = () => {
       <td>${cantidad}</td>
       <td>$${precio / cantidad}</td>
       <td>$${precio}</td>
-      <td><button id="+${id}" class="btn btn-success">+</button>
-          <button id="-${id}" class="btn btn-danger">-</button>
+      <td class="btnAgregarProductos"><button id="+${id}" class="btn btn-success" title="Agregar">+</button>
+          <button id="-${id}" class="btn btn-danger" title="Quitar">-</button>
       </td>
       `;
         //Lo agregamos a nuestro body
@@ -136,18 +131,31 @@ const dibujarFooter = () => {
         let footer = document.createElement("tr");
 
         footer.innerHTML = `
-      <th><b>Total:</b></th>
+      <th><b>Resumen Final:</b></th>
       <td></td>
-      <td>${generarTotales().cantidadTotal}</td>
+      <td>Productos Totales: ${generarTotales().cantidadTotal}</td>
       <td></td>
-      <td>$${generarTotales().costoTotal}</td>
+      <td>Total a pagar: $${generarTotales().costoTotal}</td>
+      <td class="btnConfirmarPago"><button id="finalizar__compra" class="btn btn-primary" title="Finalizar compra">Finalizar compra</button></td>
       `;
         //Lo mostramos
         footCarrito.append(footer);
+
+        //prueba
+        const btnFinalizar = footer.querySelector(`#finalizar__compra`);
+        btnFinalizar.addEventListener("click", () => {
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `Se realizó con éxito la compra, con un monto total de: $${generarTotales().costoTotal}.`,
+                text: "Gracias por elegirnos.",
+                showConfirmButton: false,
+                timer: 3000
+              });
+        })
     } else {
         footCarrito.innerHTML = `<h3>No hay productos en el carrito<h/3>`;
     }
-
 }
 
 ///////////////////////////////////////////////
@@ -200,3 +208,8 @@ const restarCantidad = (id) => {
     dibujarCarrito();
 };
 /////////////////////////////////////////////////////////////////
+
+//Creamos evento en el DOM
+document.addEventListener("DOMContentLoaded", () => {
+    dibujarCarrito();
+});
