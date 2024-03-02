@@ -139,6 +139,8 @@ filterInput.addEventListener("keyup", (e) => {
 
 });
 
+//////////////////////////
+//2-Filter por lista
 filterLista.addEventListener("click", (e) => {
     e.preventDefault(); // Evitamos que se ejecute el comportamiento predeterminado del enlace
     const categoriaSeleccionada = e.target.innerHTML;
@@ -154,87 +156,51 @@ filterLista.addEventListener("click", (e) => {
     generarCartasProductos(productosFiltrados);
 });
 
+//////////////////////////
+//3-Filter por Nombre
+filterNombre.addEventListener("click", (e) => {
+    filtrarPorNombre(e.target.innerHTML);
+});
 
-
-
-//Filtro por categorias segun pick en lista
-// filterLista.addEventListener("click", (e) => {
-//     const categoriaSeleccionada = e.target.innerHTML.toLowerCase();
-//     let productosFiltrados;
-
-//     if (categoriaSeleccionada !== "Todos") {
-//         productosFiltrados = productosDisponibles.filter((producto) => producto.categorias.toLowerCase().includes(categoriaSeleccionada));
-//     } else {
-//         productosFiltrados = productosDisponibles;
-//     }
-
-//     generarCartasProductos(productosFiltrados);
-// });
-
-
-// //////////////////////////
-// // //Filtro por categoria segun pick en lista
-// filterLista.addEventListener("click", (e) => {
-//     const productosFilter = productosDisponibles.filter((producto) => producto.categorias.toLowerCase().includes(e.target.innerHTML.toLowerCase()));
-
-//     //Una vez tengo el nuevo arreglo, sobre escribo para generar la carta
-//     productosDisponibles = productosFilter;
-
-//     if (e.target.innerHTML !== "Todos") {
-//         generarCardsProductos(productosFilter);
-//     }
-
-// });
-
+////Creamos funcion para descriminar por nombre
+const filtrarPorNombre = (orden) => {
+    //Creamos esta variable para decirle que copie el orden que le dimos al array
+    let productos;
+    //Utilizamos el sort para que ordene sobre el array existente
+    if (orden === "Nombre (Ascendente)") {
+        productos = productosDisponibles.sort((a, b) => {
+            //Si el nombre por el que empieza tiene un grado mayor que la del otro nombre me devuelve un valor(Bolean) y sigue con el sig.
+            if (a.nombre.toLowerCase() > b.nombre.toLowerCase()) {
+                return 1;
+            } else if (a.nombre.toLowerCase() < b.nombre.toLowerCase()) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    } else if (orden === "Nombre (Descendente)") {
+        productos = productosDisponibles.sort((a, b) => {
+            if (a.nombre.toLowerCase() < b.nombre.toLowerCase()) {
+                return 1;
+            } else if (a.nombre.toLowerCase() > b.nombre.toLowerCase()) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
+    }
+    generarCartasProductos(productos);
+};
 
 //////////////////////////
-//Filter por Nombre
-// filterNombre.addEventListener("click", (e) => {
-//     filtrarPorNombre(e.target.innerHTML);
-// });
-
-// //Creamos Funcion
-// const filtrarPorNombre = (orden) => {
-//     //Creamos esta variable para decirle que copia el orden que le dimos al array
-//     let productos;
-//     //Utilizamos el sort para que ordene sobre el array existente
-//     if (orden === "Nombre (Ascendente)") {
-//         productos = productosDisponibles.sort((a, b) => {
-//             //Si el nombre por el que empieza tiene un grado mayor que la del otro nombre me devuelve un valor(Bolean) y sigue con el sig.
-//             if (a.nombre.toLowerCase() > b.nombre.toLowerCase()) {
-//                 return 1;
-//             } else if (a.nombre.toLowerCase() < b.nombre.toLowerCase()) {
-//                 return -1;
-//             } else {
-//                 return 0;
-//             }
-//         });
-//     } else if (orden === "Nombre (Descendente)") {
-//         productos = productosDisponibles.sort((a, b) => {
-//             if (a.nombre.toLowerCase() < b.nombre.toLowerCase()) {
-//                 return 1;
-//             } else if (a.nombre.toLowerCase() > b.nombre.toLowerCase()) {
-//                 return -1;
-//             } else {
-//                 return 0;
-//             }
-//         });
-//     }
-
-//     generarCardsProductos(productos);
-// }
-
-//////////////////////////
-//Filtro por precio
-
-// filterPrecio.addEventListener("click", (e) => {
-//     const orden = e.target.innerHTML;
-//     let productos;
-//     if (orden === "Precio (Menor a Mayor)") {
-//         productos = productosDisponibles.sort((a, b) => a.precio - b.precio);
-//     } else if (orden === "Precio (Mayor a Menor)") {
-//         productos = productosDisponibles.sort((a, b) => b.precio - a.precio);
-//     }
-
-//     generarCardsProductos(productos);
-// })
+//4-Filter por precio
+filterPrecio.addEventListener("click", (e) => {
+    const orden = e.target.innerHTML;
+    let productos;
+    if (orden === "Precio (Menor a Mayor)") {
+        productos = productosDisponibles.sort((a, b) => a.precio - b.precio);
+    } else if (orden === "Precio (Mayor a Menor)") {
+        productos = productosDisponibles.sort((a, b) => b.precio - a.precio);
+    }
+    generarCartasProductos(productos);
+});
