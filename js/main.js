@@ -151,9 +151,6 @@ filterLista.addEventListener("click", (e) => {
     } else {
         productosFiltrados = productosDisponibles;
     }
-
-    console.log("Productos filtrados:", productosFiltrados); // Verificar los productos filtrados
-    console.log("Categorías disponibles:", productosDisponibles.map(producto => producto.categorias).flat());
     generarCartasProductos(productosFiltrados);
 });
 
