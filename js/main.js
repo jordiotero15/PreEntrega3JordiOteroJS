@@ -140,9 +140,8 @@ filterInput.addEventListener("keyup", (e) => {
 //////////////////////////
 //2-Filter por lista
 filterLista.addEventListener("click", (e) => {
-    e.preventDefault(); // Evitamos que se ejecute el comportamiento predeterminado del enlace
+    e.preventDefault(); 
     const categoriaSeleccionada = e.target.innerHTML;
-    console.log("Categoría seleccionada:", categoriaSeleccionada); // Verificar que se está capturando la categoría correcta
 
     let productosFiltrados;
 

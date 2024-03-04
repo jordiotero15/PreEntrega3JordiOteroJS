@@ -57,7 +57,6 @@ class newUser {
         this.user = user;
         this.email = email;
         this.pass = pass;
-        this.admin = false;
     };
 };
 
