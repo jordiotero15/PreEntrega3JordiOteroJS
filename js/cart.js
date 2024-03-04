@@ -3,10 +3,6 @@ import { productosDisponibles } from "./main.js";
 //Traemos los elementos del carrito.. si carrito no existe(null) ... por ende se crea una sessionStorage de carrito
 JSON.parse(sessionStorage.getItem("carrito")) === null && sessionStorage.setItem("carrito", JSON.stringify([]));
 
-// //Creamos evento en el DOM
-// document.addEventListener("DOMContentLoaded", () => {
-//     dibujarCarrito();
-// });
 //Definimos una variable para alojar los datos del carrito
 let carrito = JSON.parse(sessionStorage.getItem("carrito"));
 
